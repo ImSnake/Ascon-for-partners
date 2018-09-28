@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="vendor/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="question-block hide-element">
+        <div class="question-form">
+            <div class="form-style-2">
+                <div id='close-btn-2' class="close-btn"><i class="fas fa-times"></i></div>
+                <div class="form-style-2-heading"><p>Пожалуйста, задайте ваш вопрос</p></div>
+                <form action="#" method="post">
+                    <label for="question-name"><span>Имя <span class="required">*</span></span><input id='question-name' type="text" class="input-field" value="" required></label>
+                    <label for="question-email"><span>Email <span class="required">*</span></span><input id='question-email' type="email" class="input-field" value="" required></label>
+                    <label for="question-phone"><span>Телефон <span class="required">*</span></span><input id='question-phone' class="input-field" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="8-900-000-0000" required></label>
+                    <label for="question-options"><span>Тема </span><select id="question-options" name="question-options" class="select-field">
+                        <option value="General Question">General</option>
+                        <option value="Advertise">Products</option>
+                        <option value="Partnership">Partnership</option>
+                        <option value="Other">Other</option>
+                    </select></label>
+                    <label for="question-message"><span>Сообщение <span class="required">*</span></span><textarea id="question-message" class="textarea-field" required></textarea></label>
+                    <label for="question-submit"><span>&nbsp;</span><input id='question-submit' type="submit" value="Отправить"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-block hide-element">
+        <div class="login-form">
+            <div class="login-style-1">
+                <div id='close-btn-1' class="close-btn"><i class="fas fa-times "></i></div>
+                <div class="login-style-1-heading"><p>Войти в личный кабинет партнера</p></div>
+                <form action="#" method="post">
+                    <label for="login-email"><span>Email\login<span class="required">*</span></span><input id='login-email' type="email" class="input-field" value="" required></label>
+                    <label for="login-password"><span>Password<span class="required">*</span></span><input id='login-password' type="password" class="input-field" value="" required></label>
+                    <label for="login-send"><span>&nbsp;</span><input id='login-send' type="submit" value="Войти"></label>
+                </form>
+                <div class="login-style-1-ending">
+                    <a href="#" id="restore-password">Восстановить пароль</a><br>
+                    <a href="new-partner-registration.html">Регистрация в партнерской программе</a>
+                </div>
+            </div>
+            <div class="restore-password hide-element">
+                <div id='close-btn-3' class="close-btn"><i class="fas fa-times "></i></div>
+                <div class="login-style-1-heading"><p>Восстановление пароля</p>
+                    <span>На указанный при регистрации email будет отправлено письмо с паролем</span></div>
+                <form action="#" method="post">
+                    <label for="restore-password-email"><span>Email<span class="required">*</span></span><input id='restore-password-email' type="email" class="input-field" value="" required></label>
+                    <label for="restore-password-send"><span> </span><input id='restore-password-send' type="submit" value="Получить пароль"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <header>
+            <nav>
+                <div class="content-box">
+                    <ul class="main-menu line-decor">
+                        <li id="sub-menu"><a href="#">Партнерам</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="https://ascon.ru/company/" target="_blank">О компании</a></li>
+                    </ul>
+                    <ul id="partners-nav" class="partners-nav hide-element">
+                        <li><a href="terms_and_conditions.html">
+                            <i class="partner-terms"></i>Условия<br>сотрудничества</a></li>
+                        <li><a href="cooperation-advantages.html">
+                            <i class="advantages"></i>Преимущества<br>для партнеров</a></li>
+                        <li><a href="question-answer.html">
+                            <i class="faq"></i><span>Вопрос<br>ответ</span></a></li>
+                        <li><a href="new-partner-registration.html">
+                            <i class="register"></i>Регистрация<br>нового участника</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content-box">
+            <header class="second-part">
+                <div class="left">
+                    <a href="index.html"><img src="images/logo.png" alt="header-logo"></a>
+                    <h3>Партнёрская программа АСКОН<br><span>Бизнес в команде с лидером!</span></h3>
+                </div>
+                <div class="right">
+                    <a href="#" id="login-icon" class="login" title="Войти в кабинет партнера">
+                        <div class="scale-in-center"></div>
+                        <i class="fas fa-user-alt"></i></a>
+                    <a href="index.html" class="back-to-main" title="Вернуться на главную страницу">
+                        <div class="scale-in-center"></div>
+                        <i class="fas fa-home"></i></a>
+                </div>
+            </header>
+        </div>
+
+        <div class="content-box">
+            <div class="contacts-poster main-image">
+                <div class="poster-txt">
+                    <h3>Контакты</h3>
+                    <p>Любые вопросы, связанные с компанией АСКОН, с её продуктами и услугами, а так же с условиями участия в партнёрской программе вы можете задать специалистам отдела по работе с партнерами (ОРП) компании АСКОН</p>
+                </div>
+                <nav class="contacts-nav">
+                    <ul>
+                        <li class="active-link"><a href="#">Партнерский&nbsp;отдел</a></li>
+                        <li id="question-nav"><a href="#">Задать&nbsp;вопрос</a></li>
+                        <li><a href="contacts-distributors.html">Найти&nbsp;дистрибьютора</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <div id="ascon-contacts">
+                <h4>Центральные офисы</h4>
+                <div class="contacts-box">
+                    <div class="ascon-contacts">
+                        <h3>/ МОСКВА</h3>
+                        <p><span>Телефон:</span> +7 495 783-25-59</p>
+                        <p><span>E-mail:</span><span class="email">dealer@ascon.ru</span></p>
+                        <p><span>Адрес:</span> Алтуфьевское шоссе, д. 1/7, Бета-Центр, офис 112</p>
+                        <p><span>Для почты:</span> 127106, Москва, Алтуфьевское шоссе, д. 1/7, Бета-Центр, офис 112</p>
+                    </div>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad56a45a0de85e23f1c0719d9136d833824475de58fbde9268306510486fe3051&amp;source=constructor" width="350" height="248" frameborder="0"></iframe>
+                </div>
+                <div class="contacts-box">
+                    <div class="ascon-contacts">
+                        <h3>/ САНКТ-ПЕТЕРБУРГ</h3>
+                        <p><span>Телефон:</span> +7 812 703-39-30, 703-39-34</p>
+                        <p><span>E-mail:</span><span class="email">info@ascon.ru</span></p>
+                        <p><span>Адрес:</span> ул. Одоевского, дом 5, литера «А»</p>
+                        <p><span>Для почты:</span> Россия, 199155, г. Санкт-Петербург, а/я 4</p>
+                    </div>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad9d826ef8b0f7d07bf760b152a1e276afef2b1ba33c9e40fcad25125d14ea5ff&amp;source=constructor" width="350" height="248" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="question-icon" class="question-icon">
+        <a class="flip-vertical-right" href="#"><span>Задать вопрос</span></a>
+    </div>
+
+    <footer>
+        <div class="pre-footer">
+            <div class="content-box">
+                <div class="footer-navigation">
+                    <div class="nav-columns">
+                        <h3>/ Партнерам</h3>
+                        <ul>
+                            <li><a href="terms_and_conditions.html">Условия сотрудничества</a></li>
+                            <li><a href="cooperation-advantages.html">Преимущества для партнеров</a></li>
+                            <li><a href="question-answer.html">Вопрос-Ответ</a></li>
+                            <li><a href="new-partner-registration.html">Регистрация нового партнера</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-columns">
+                        <h3>/ Программные продукты</h3>
+                        <ul>
+                            <li><a href="http://kompas.ru/kompas-3d/about/" target="_blank">КОМПАС-3D</a></li>
+                            <li><a href="http://kompas.ru/kompas-grafik/about/" target="_blank">КОМПАС-График</a></li>
+                            <li><a href="http://kompas.ru/kompas-stroitel/about/" target="_blank">КОМПАС-Строитель</a></li>
+                            <li><a href="http://pilotems.com/" target="_blank">Pilot-ICE</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-columns">
+                        <h3>/ Другие сайты Аскон</h3>
+                        <ul>
+                            <li><a href="http://ascon.ru" target="_blank">Основной сайт АСКОН</a></li>
+                            <li><a href="http://certification.ascon.ru/about_certification/" target="_blank">Единая система сертификации АСКОН</a></li>
+                            <li><a href="http://support.ascon.ru/conditions/" target="_blank">Служба поддержки пользователей</a></li>
+                            <li><a href="http://edu.ascon.ru/main/news/" target="_blank">Образовательная программа АСКОН</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-box footer">
+            <img src="images/ascon-footer-logo.png" alt="© АСКОН, 1989—2016">
+            <i>&copy; АСКОН, 1989 — 2018</i>
+        </div>
+    </footer>
+
+</div>
+
+<script type="text/javascript" src="vendor/js/jq.js"></script>
+<script type="text/javascript" src="js/js_open_part.js"></script>
+
+</body>
+</html>

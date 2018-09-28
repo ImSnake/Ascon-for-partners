@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Условия сотрудничества</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="vendor/fontAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="question-block hide-element">
+        <div class="question-form">
+            <div class="form-style-2">
+                <div id='close-btn-2' class="close-btn"><i class="fas fa-times"></i></div>
+                <div class="form-style-2-heading"><p>Пожалуйста, задайте ваш вопрос</p></div>
+                <form action="#" method="post">
+                    <label for="question-name"><span>Имя <span class="required">*</span></span><input id='question-name'
+                                                                                                      type="text"
+                                                                                                      class="input-field"
+                                                                                                      value="" required></label>
+                    <label for="question-email"><span>Email <span class="required">*</span></span><input
+                            id='question-email' type="email" class="input-field" value="" required></label>
+                    <label for="question-phone"><span>Телефон <span class="required">*</span></span><input
+                            id='question-phone' class="input-field" type="tel"
+                            pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="8-900-000-0000" required></label>
+                    <label for="question-options"><span>Тема </span><select id="question-options"
+                                                                            name="question-options"
+                                                                            class="select-field">
+                        <option value="General Question">General</option>
+                        <option value="Advertise">Products</option>
+                        <option value="Partnership">Partnership</option>
+                        <option value="Other">Other</option>
+                    </select></label>
+                    <label for="question-message"><span>Сообщение <span class="required">*</span></span><textarea
+                            id="question-message" class="textarea-field" required></textarea></label>
+                    <label for="question-submit"><span>&nbsp;</span><input id='question-submit' type="submit"
+                                                                           value="Отправить"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-block hide-element">
+        <div class="login-form">
+            <div class="login-style-1">
+                <div id='close-btn-1' class="close-btn"><i class="fas fa-times "></i></div>
+                <div class="login-style-1-heading"><p>Войти в личный кабинет партнера</p></div>
+                <form action="#" method="post">
+                    <label for="login-email"><span>Email\login<span class="required">*</span></span><input
+                            id='login-email' type="email" class="input-field" value="" required></label>
+                    <label for="login-password"><span>Password<span class="required">*</span></span><input
+                            id='login-password' type="password" class="input-field" value="" required></label>
+                    <label for="login-send"><span>&nbsp;</span><input id='login-send' type="submit"
+                                                                      value="Войти"></label>
+                </form>
+                <div class="login-style-1-ending">
+                    <a href="#" id="restore-password">Восстановить пароль</a><br>
+                    <a href="new-partner-registration.html">Регистрация в партнерской программе</a>
+                </div>
+            </div>
+            <div class="restore-password hide-element">
+                <div id='close-btn-3' class="close-btn"><i class="fas fa-times "></i></div>
+                <div class="login-style-1-heading"><p>Восстановление пароля</p>
+                    <span>На указанный при регистрации email будет отправлено письмо с паролем</span></div>
+                <form action="#" method="post">
+                    <label for="restore-password-email"><span>Email<span class="required">*</span></span><input
+                            id='restore-password-email' type="email" class="input-field" value="" required></label>
+                    <label for="restore-password-send"><span> </span><input id='restore-password-send' type="submit"
+                                                                            value="Получить пароль"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <header>
+            <nav>
+                <div class="content-box">
+                    <ul class="main-menu line-decor">
+                        <li id="sub-menu"><a href="#">Партнерам</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="https://ascon.ru/company/" target="_blank">О компании</a></li>
+                    </ul>
+                    <ul id="partners-nav" class="partners-nav hide-element">
+                        <li><a href="terms_and_conditions.html">
+                            <i class="partner-terms"></i>Условия<br>сотрудничества</a></li>
+                        <li><a href="cooperation-advantages.html">
+                            <i class="advantages"></i>Преимущества<br>для партнеров</a></li>
+                        <li><a href="question-answer.html">
+                            <i class="faq"></i><span>Вопрос<br>ответ</span></a></li>
+                        <li><a href="new-partner-registration.html">
+                            <i class="register"></i>Регистрация<br>нового участника</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content-box">
+            <header class="second-part">
+                <div class="left">
+                    <a href="index.html"><img src="images/logo.png" alt="header-logo"></a>
+                    <h3>Партнёрская программа АСКОН<br><span>Бизнес в команде с лидером!</span></h3>
+                </div>
+                <div class="right">
+                    <a href="#" id="login-icon" class="login" title="Войти в кабинет партнера">
+                        <div class="scale-in-center"></div>
+                        <i class="fas fa-user-alt"></i></a>
+                    <a href="index.html" class="back-to-main" title="Вернуться на главную страницу">
+                        <div class="scale-in-center"></div>
+                        <i class="fas fa-home"></i></a>
+                </div>
+            </header>
+
+
+        </div>
+
+        <div class="content-box terms-and-conditions">
+
+            <div class="terms-and-conditions-poster">
+                <div class="poster-txt">
+                    <h3>Партнерские программы АСКОН</h3>
+                    <p>Выберете продуктовую линейку АСКОН
+                    <p>Ознакомьтесь с возможными вариантами сотрудничества, с условиями и требованиями партнёрской
+                        программы</p>
+                </div>
+                <nav>
+                    <ul id="switch-nav">
+                        <li alt="compass-link" class="active-link"><span>продукты Компас</span></li>
+                        <li alt="pilot-link"><span>Системы Pilot-ICE</span></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="compass-link" class="sub-nav" alt="compass-link">
+                <ul>
+                    <li class="active-link" alt='compass-variants'>Варианты сотрудничества</li>
+                    <li alt="compass-registration">Процедура регистрации</li>
+                    <li alt="compass-prolongation">Период действия и пролонгация</li>
+                </ul>
+                <hr>
+
+                <section class="compass-variants" alt='compass-variants'>
+                    <h4>Партнерская программа АСКОН: КОМПАС</h4>
+                    <p>Варианты сотрудничества связаны с индивидуальным набором ключевых условий, близко соответствующих
+                        ожиданиям конечных заказчиков. Для каждого варианта сотрудничества компания-партнер должна
+                        соответствовать установленным минимальным условиям.</p>
+                    <p>Партнерский статус действует на всей территории России. Возможность партнерства для СНГ стран
+                        оговариваются на основании отдельных соглашений и договоров.</p>
+                    <p>Партнер имеет право публично распространять информацию о наличии присвоенного АСКОН Партнерского
+                        статуса, а также использовать логотип статуса партнера в своих рекламных и иных информационных
+                        материалах при условии актуальности действия указанного сертификата и обязательного указания его
+                        точного наименования.</p>
+                    <div class="background-option">
+                        <h4>Варианты сотрудничества</h4>
+                        <div class="options-block">
+                            <div class="options-square">
+                                <img src="images/icons/status-partner.png" alt="status-partner">
+                                <h3>Зарегистрированный<br>партнер</h3>
+                                <p>Продажа коробочных решений<br><br></p>
+                                <span class='details'><br>Подробнее<i class="fas fa-angle-double-down pulsate-fwd"></i></span>
+
+                                <div class="hide-element">
+                                    <span class="no-details"><br><i class="fas fa-angle-double-up pulsate-fwd"></i></span>
+                                    <p class="benefits">Регистрация сделок<br>
+                                    Консультации и обучение<br>
+                                    Инструменты для продвижения<br><br><br><br><br>
+                                </p>
+                                    <p><br>Присваивается после регистрации и&nbsp;успешной авторизации<br><br></p></div>
+                            </div>
+                            <div class="options-square">
+                                <img src="images/icons/status-expert.png" alt="status-expert">
+                                <h3>Зарегистрированный<br>Партнер-Эксперт</h3>
+                                <p>Продажа коробочных решений<br>Услуги по внедрению</p>
+
+                                <span class='details'><br>Подробнее<i class="fas fa-angle-double-down pulsate-fwd"></i></span>
+
+                                <div class="hide-element">
+                                    <span class="no-details"><br><i class="fas fa-angle-double-up pulsate-fwd"></i></span>
+                                    <p class="benefits">Регистрация сделок<br>
+                                    Консультации и обучение<br>
+                                    Инструменты для продвижения<br>
+                                    Ценовая защита (price-protect)<br>
+                                    Помощь в работе с заказчиками<br>
+                                    Совместное продвижение<br>
+                                    Маркетинговые компенсации
+                                </p>
+                                    <p><br>Присваивается при подтверждении наличия сертифицированных технических специалистов</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-option">
+                        <h4>Условия получения статуса</h4>
+                        <div class="div-table compass">
+                            <div class='main-column head'></div>
+                            <div class="simple-column head">Зарегистрированный<br>ПАРТНЕР</div>
+                            <div class="simple-column head">Зарегистрированный<br>ПАРТНЕР-ЭКСПЕРТ</div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Подписать односторонее соглашение с АСКОН</div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Разместить на собственном сайте информацию о продуктах и акциях
+                                АСКОН
+                            </div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Соблюдать единую ценовую политику по прейскуранту АСКОН</div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Сертифицировать консультанта по лицензированию</div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Сертифицировать технического специалиста</div>
+                            <div class="simple-column"></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Участвовать в маркетинговых активностях АСКОН</div>
+                            <div class="simple-column"></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                    <div class="button"><a class="action-button-2" href="new-partner-registration.html">Регистрация в
+                        программе</a></div>
+                </section>
+
+                <section alt="compass-registration" class="hide-element">
+                    <div class="background-option">
+                        <h4>Процедура регистрации</h4>
+                        <div class="options-block">
+                            <div class="options-square">
+                                <img src="images/icons/1-step-register.png" alt="1-step-register">
+                                <h3><span>1. </span>ОТПРАВИТЬ ЗАЯВКУ</h3>
+                                <p>Заполнить регистрационную форму на участие в партнерской программе АСКОН. Анкета даст
+                                    нам представление о вашем бизнесе, ваших потенциальных клиентах, о том, какую
+                                    поддержку мы сможем вам оказать.</p>
+                            </div>
+                            <div class="options-square">
+                                <img src="images/icons/2-step-register.png" alt="2-step-register">
+                                <h3><span>2. </span>ПОДПИСАТЬ СОГЛАШЕНИЕ</h3>
+                                <p>В ответ на обращение мы пришлем вам одностороннее соглашение о соблюдении
+                                    установленных правил работы. Партнерское соглашение необходимо будет распечатать на
+                                    официальном бланке компании, подписать, поставить печать и отправить в АСКОН.</p>
+                            </div>
+                            <div class="options-square">
+                                <img src="images/icons/3-step-register.png" alt="3-step-register">
+                                <h3><span>3. </span>ВЫБРАТЬ ПОСТАВЩИКА</h3>
+                                <p>Заключить договор с официальным дистрибьютором АСКОН и направить ему сканированную
+                                    копию партнерского соглашения.</p>
+                            </div>
+                            <div class="options-square">
+                                <img src="images/icons/4-step-register.png" alt="4-step-register">
+                                <h3><span>4. </span>ОБНОВИТЬ ИНФОРМАЦИЮ НА&nbsp;САЙТЕ</h3>
+                                <p>Разместить на веб-сайте компании информацию о продуктах АСКОН.</p>
+                            </div>
+                            <div class="options-square">
+                                <img src="images/icons/5-step-register.png" alt="5-step-register">
+                                <h3><span>5. </span>ПРОЙТИ ТЕСТИРОВАНИЕ</h3>
+                                <p>Сертифицировать не менее одного специалиста по лицензированию ПО АСКОН.</p>
+                            </div>
+                            <div class="options-square">
+                                <img src="images/icons/6-step-register.png" alt="6-step-register">
+                                <h3><span>6. </span>ПОЛУЧИТЬ КОД ПАРТНЕРА</h3>
+                                <p>После авторизации компании выдается сертификат со статусом Зарегистрированный партнер
+                                    сроком на 1 год, а так же персональный код партнера АСКОН и логотип подтверждающий
+                                    факт регистрации и статус официального партнера.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button"><a class="action-button-2" href="new-partner-registration.html">Сделать первый
+                        шаг</a></div>
+                </section>
+
+                <section alt="compass-prolongation" class="hide-element">
+                    <h4>ПЕРИОД ДЕЙСТВИЯ И ПРОЛОНГАЦИЯ</h4>
+                    <p>Партнерский статус действителен до конца календарного года (в котором он был получен), и подлежит
+                        пересмотру по окончанию этого срока, либо ранее этого срока по инициативе АСКОН или самого
+                        партнера.</p>
+                    <p>В случаях несоответствия требованиям партнерского статуса, а также при нарушении установленных
+                        правил работы (условий одностороннего соглашения), компания АСКОН оставляет за собой право в
+                        одностороннем порядке изменять либо аннулировать статусы сбытовых партнеров АСКОН.</p>
+                    <div class="background-option">
+                        <h4>условия продления срока действия</h4>
+                        <div class="options-block">
+                            <div class="options-square">
+                                <img src="images/icons/1-step-prolongation.png" alt="1-step-prolongation">
+                                <h3><span>1. </span>ОТПРАВИТЬ ЗАПРОС ДИСТРИБЬЮТОРУ</h3>
+                                <p>Продление сертификата официального партнера АСКОН со статусом "Зарегистрированный
+                                    партнер" осуществляется по запросу через официального дистрибьютора.</p>
+                            </div>
+                            <div class="options-square">
+                                <img src="images/icons/2-step-prolongation.png" alt="2-step-prolongation">
+                                <h3><span>2. </span>УСПЕШНО СДАТЬ ТЕСТИРОВАНИЕ</h3>
+                                <p>В запросе необходимо указать персональный код партнера и приложить копию сертификата
+                                    опере-сертификации специалиста по лицензированию ПО АСКОН.</p>
+                            </div>
+                            <div class="options-square">
+                                <img src="images/icons/3-step-prolongation.png" alt="3-step-prolongation">
+                                <h3><span>3. </span>АКТУАЛИЗИРОВАТЬ ИНФОРМАЦИЮ НА САЙТЕ</h3>
+                                <p>При продлении сертификата проводится обязательная проверка наличия и корректности
+                                    информации о продуктах АСКОН на сайте партнера.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+            <div id="pilot-link" class="sub-nav hide-element" alt="pilot-link">
+                <ul>
+                    <li class="active-link" alt='pilot-variants'>Варианты сотрудничества</li>
+                    <li alt="pilot-registration">Процедура регистрации</li>
+                    <li alt="pilot-prolongation">Период действия и пролонгация</li>
+                </ul>
+                <hr>
+
+                <section alt='pilot-variants'>pilot-variants</section>
+
+                <section alt="pilot-registration" class="hide-element">pilot-registration</section>
+
+                <section alt="pilot-prolongation" class="hide-element">pilot-prolongation</section>
+
+            </div>
+        </div>
+
+
+        <div id="question-icon" class="question-icon">
+            <a href="#"><span>Задать вопрос</span></a>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="pre-footer">
+            <div class="content-box">
+                <div class="footer-navigation">
+                    <div class="nav-columns">
+                        <h3>/ Партнерам</h3>
+                        <ul>
+                            <li><a href="terms_and_conditions.html">Условия сотрудничества</a></li>
+                            <li><a href="cooperation-advantages.html">Преимущества для партнеров</a></li>
+                            <li><a href="question-answer.html">Вопрос-Ответ</a></li>
+                            <li><a href="new-partner-registration.html">Регистрация нового партнера</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-columns">
+                        <h3>/ Программные продукты</h3>
+                        <ul>
+                            <li><a href="http://kompas.ru/kompas-3d/about/" target="_blank">КОМПАС-3D</a></li>
+                            <li><a href="http://kompas.ru/kompas-grafik/about/" target="_blank">КОМПАС-График</a></li>
+                            <li><a href="http://kompas.ru/kompas-stroitel/about/" target="_blank">КОМПАС-Строитель</a>
+                            </li>
+                            <li><a href="http://pilotems.com/" target="_blank">Pilot-ICE</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-columns">
+                        <h3>/ Другие сайты Аскон</h3>
+                        <ul>
+                            <li><a href="http://ascon.ru" target="_blank">Основной сайт АСКОН</a></li>
+                            <li><a href="http://certification.ascon.ru/about_certification/" target="_blank">Единая
+                                система сертификации АСКОН</a></li>
+                            <li><a href="http://support.ascon.ru/conditions/" target="_blank">Служба поддержки
+                                пользователей</a></li>
+                            <li><a href="http://edu.ascon.ru/main/news/" target="_blank">Образовательная программа
+                                АСКОН</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-box footer">
+            <img src="images/ascon-footer-logo.png" alt="© АСКОН, 1989—2016">
+            <i>&copy; АСКОН, 1989 — 2018</i>
+        </div>
+    </footer>
+
+</div>
+
+<script type="text/javascript" src="vendor/js/jq.js"></script>
+<script type="text/javascript" src="js/js_open_part.js"></script>
+
+</body>
+</html>

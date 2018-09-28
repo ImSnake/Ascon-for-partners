@@ -1,0 +1,970 @@
+/* fix footer to the end of the screen - START*/
+html,
+body
+  height: 100%
+.container
+  display: flex
+  flex-direction: column
+  height: 100%
+.content
+  flex: 1
+footer
+  flex: 0
+  background-color: #e6e6e6
+/* fix footer in the end of the screen - END*/
+
+/* header START*/
+header
+  background-color: #505050
+  padding: 3px 0
+nav li
+  list-style-type: none
+nav a
+  font-family: 'Gotham Pro Medium', sans-serif
+  display: block
+  text-decoration: none
+.main-menu
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  a
+    padding: 8px 25px
+    color: #fff
+.line-decor > li
+  &:after, &:before
+    backface-visibility: hidden
+    border: 1px solid rgba(#fff, 0)
+    bottom: 0
+    content: " "
+    display: block
+    margin: 0 auto
+    position: relative
+    transition: all 2ms ease-in-out
+    width: 0
+  &:hover
+    &:after
+      backface-visibility: hidden
+      border-color: #fff
+      transition: width 350ms ease-in-out
+      width: 70%
+    &:before
+      backface-visibility: hidden
+      border-color: #fff
+      transition: width 350ms ease-in-out
+      width: 70%
+      bottom: auto
+      top: 0
+      width: 70%
+.partners-nav
+  position: absolute
+  z-index: 99
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  background-color: #f4f4f4
+  box-shadow: 1px 3px 4px 0 rgba(0, 0, 0, 0.16)
+  margin-top: 2px
+  left: 0
+  width: 100%
+  li
+    padding: 2%
+    margin: 0 2%
+    line-height: 16px
+    a span
+      display: block
+      width: 100px
+
+
+.partners-nav a
+  display: block
+  color: #1f3045
+  font-size: 12px
+  text-decoration: none
+  text-transform: uppercase
+  text-align: center
+  transition: all 0.3s ease-in-out
+.partners-nav i
+  display: block
+  width: 70px
+  height: 70px
+  border-radius: 35px
+  margin: 0 auto 15px
+  transition: all 0.3s ease-in-out
+i.partner-terms
+  background-blend-mode: screen
+  background: linear-gradient(hsl(213, 38%, 20%), hsl(213, 38%, 20%)), url(../images/icons/partner-terms.png) no-repeat center
+i.advantages
+  background-blend-mode: screen
+  background: linear-gradient(hsl(213, 38%, 20%), hsl(213, 38%, 20%)), url(../images/icons/advantages.png) no-repeat center
+i.faq
+  background-blend-mode: screen
+  background: linear-gradient(hsl(213, 38%, 20%), hsl(213, 38%, 20%)), url(../images/icons/faq1.png) no-repeat center
+i.register
+  background-blend-mode: screen
+  background: linear-gradient(hsl(213, 38%, 20%), hsl(213, 38%, 20%)), url(../images/icons/register.png) no-repeat center
+.partners-nav li:hover a
+  color: #c94f00
+.partners-nav li:hover i
+  background-color: #c94f00
+  background-blend-mode: lighten
+  transform: scale(1.1)
+/* header-first-part END*/
+
+/* header second part START*/
+.second-part
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 2% 1%
+  background-color: #fff
+  .left
+    display: flex
+    align-items: center
+.second-part img
+  width: 150px
+  height: 42px
+  margin-top: -10px
+.second-part h3
+  font-family: 'Gotham Pro Bold', sans-serif
+  font-weight: 400
+  padding-left: 30px
+.second-part span
+  font-family: 'Gotham Pro Regular', sans-serif
+.second-part .right
+  display: flex
+  justify-content: flex-end
+  align-items: center
+.second-part a.login,
+.second-part a.back-to-main
+  display: block
+  position: relative
+  margin-left: 20px
+  background-color: #fff
+  i
+    display: block
+    position: absolute
+    color: #c64f15
+    font-size: 25px
+    top: 9px
+    right: 9px
+  .scale-in-center
+    position: relative
+    width: 44px
+    height: 44px
+    border-radius: 22px
+    background-color: #fff
+    text-align: center
+    vertical-align: middle
+    transform: scale(0)
+    transition: all 0.4s ease-in-out
+
+a.login:hover .scale-in-center,
+a.back-to-main:hover .scale-in-center
+  background-color: #f4f4f4
+  transform: scale(1.3)
+/* header second part START*/
+
+/*pre-footer START*/
+.pre-footer
+  background-color: #505050
+  opacity: 1
+.footer-navigation
+  display: flex
+  justify-content: space-between
+  padding: 3% 2% 2% 2%
+  margin: 0 0 0 2%
+  color: #fff
+  text-decoration: none
+  .nav-columns h3
+    text-transform: uppercase
+    font-family: 'Gotham Pro Black', sans-serif
+    word-spacing: 2px
+    font-weight: 400
+  .nav-columns
+    margin-right: 2%
+  .nav-columns ul
+    list-style: none
+    margin-left: 10px
+    padding-bottom: 3%
+  .nav-columns ul li a
+    display: block
+    text-decoration: none
+    color: #fff
+    padding-top: 15px
+    font-size: 13px
+  .nav-columns ul li a:hover
+    color: #c64f15
+    transition: all 0.3s ease-in-out
+
+/*footer START*/
+footer
+  background-color: #f4f4f4
+  .footer
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 1%
+footer img
+  width: 30px
+  height: 30px
+footer i
+  margin-left: 10px
+/*footer END*/
+
+/*button-styles START*/
+a.action-button-1
+  display: inline-block
+  font-family: 'Gotham Pro Medium', sans-serif
+  font-size: 12px
+  color: #1f3045
+  text-transform: uppercase
+  text-decoration: none
+  background-color: #fff
+  padding: 10px 15px
+  transition: all 0.3s ease-in-out
+  &:hover
+    background-color: #c64f15
+    color: #fff
+    border-color: #c64f15
+    box-shadow: 0 0 6px 2px rgba(217, 210, 217, 0.5)
+/*button-styles END*/
+
+/*question-icon START*/
+.question-icon
+  display: block
+  position: fixed
+  right: 0
+  bottom: 0
+  margin: 0 2% 2% 0
+  width: 80px
+  height: 80px
+  border-radius: 40px
+  background: linear-gradient(#203146, #203146), url(../images/icons/import-off.png) no-repeat center
+  background-blend-mode: screen
+  opacity: 0.8
+  transform: rotateY(0)
+  transition: all 0.3s ease-out
+  a
+    text-decoration: none
+  &:hover
+    cursor: pointer
+    transform: rotateY(180deg)
+    background: linear-gradient(#c64f15, #c64f15)
+    opacity: 1
+    span
+      display: block
+      opacity: 1
+  span
+    display: block
+    color: #fff
+    padding-top: 23px
+    text-align: center
+    transform: rotateY(180deg)
+    opacity: 0
+/*question-icon END*/
+
+
+/*QUESTION and LOGIN BLOCKS - START*/
+.question-block,
+.login-block
+  position: fixed
+  z-index: 98
+  top: 0
+  left: 0
+  width: 100%
+  max-height: 100%
+  height: 2000px
+  background: rgba(4, 6, 38, 0.5)
+  display: flex
+  justify-content: center
+  align-items: center
+
+.close-btn
+  display: flex
+  justify-content: flex-end
+  font-size: 150%
+  margin-top: -5%
+  margin-right: -5%
+.close-btn:hover
+  color: #c64f15
+
+.question-form,
+.login-form
+  position: fixed
+  z-index: 99
+  top: 10%
+  left: 30%
+  background-color: #f4f4f4
+  border-radius: 25px
+  padding: 3% 4% 3% 3%
+  -webkit-box-shadow: 0 0 30px 2px rgba(244,244,244,1)
+  -moz-box-shadow:  0 0 30px 2px rgba(244,244,244,1)
+  box-shadow:  0 0 30px 2px rgba(244,244,244,1)
+
+.login-style-1,
+.form-style-2
+  min-width: 400px
+  max-width: 500px
+  padding: 20px 12px 10px 20px
+  font-family: "Gotham Pro Regular", sans-serif
+  color: #1f3045
+  font-size: 14px
+.form-style-2-heading,
+.login-style-1-heading
+  font-weight: bold
+  border-bottom: 2px solid #ddd
+  margin-bottom: 20px
+  font-size: 15px
+  padding-bottom: 3px
+  span
+    display: block
+    font-weight: 200
+    font-size: 14px
+    padding-bottom: 10px
+.login-style-1-ending
+  border-top: 2px solid #ddd
+  margin-top: 20px
+  padding-top: 20px
+  a
+    display: block
+    text-decoration: none
+    color: #1f3045
+    font-size: 15px
+    font-weight: bold
+  a:hover
+    color: #c64f15
+
+.restore-password
+  width: 400px
+
+
+.login-style-1,
+.form-style-2,
+.restore-password
+  label
+    display: block
+    margin: 0 0 15px 0
+    > span
+      width: 100px
+      font-weight: bold
+      float: left
+      padding-top: 8px
+      padding-right: 5px
+  span.required
+    color: #c64f15
+  input.input-field, .select-field
+    width: 48%
+  input.input-field, .textarea-field, .select-field
+    box-sizing: border-box
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    border: 1px solid #C2C2C2
+    box-shadow: 1px 1px 4px #EBEBEB
+    -moz-box-shadow: 1px 1px 4px #EBEBEB
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB
+    border-radius: 3px
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    padding: 7px
+    outline: none
+  .input-field:focus, .textarea-field:focus, .select-field:focus
+    border: 1px solid #1f3045
+  .textarea-field
+    height: 100px
+    width: 70%
+    max-width: 500px
+  input
+    &[type=submit]
+      border: 1px solid #ddd
+      border-radius: 3px
+      padding: 8px 15px 8px 15px
+      background: #fff
+      color: #1f3045
+      transition: all 0.3s ease-in-out
+    &[type=submit]:hover
+      background: #c64f15
+      color: #fff
+      box-shadow: 1px 1px 4px #DADADA
+      -moz-box-shadow: 1px 1px 4px #DADADA
+      -webkit-box-shadow: 1px 1px 4px #DADADA
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+/*QUESTION and LOGIN BLOCKS - END*/
+
+
+/*index part START*/
+
+.products-for-partners
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  margin: 2% 0
+.products-for-partners a
+  display: block
+  text-decoration: none
+  color: #040626
+  text-align: center
+  margin: 1%
+  .section-box
+    background-color: #f4f4f4
+    height: 150px
+    width: 230px
+    padding: 15px 10px 10px 10px
+    transform: translateZ(0)
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    &:hover
+      transform: translateZ(50px)
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35)
+  .section-box h2
+    font-family: 'Gotham Pro Bold', sans-serif
+    margin-top: 10%
+    font-size: 15px
+  .section-box p
+    font-size: 13px
+    font-weight: 400
+    line-height: 16px
+  .compas
+    border-bottom: 7px solid #3265a0
+  .compas-build
+    border-bottom: 7px solid #6db61e
+  .pilot-ice
+    border-bottom: 7px solid #2b9ccb
+/*index part END*/
+
+
+/*contacts part START*/
+.contacts-poster
+  height: 200px
+  position: relative
+  .poster-txt
+    z-index: 2
+    padding: 3% 4%
+    h3
+      font-family: 'Gotham Pro Bold', sans-serif
+      color: #fff
+      font-size: 30px
+      font-weight: 600
+    p
+      font-size: 15px
+      color: #fff
+      line-height: 1.5em
+
+.contacts-poster.main-image
+  background: url(../images/banners/contacts-main.png) no-repeat center
+  opacity: 0.9
+
+.contacts-poster.distributor-image
+  background: url(../images/banners/contacts-distributor.jpg) no-repeat center
+  opacity: 0.9
+
+.contacts-nav
+  position: absolute
+  bottom: 0
+  margin-left: 10px
+  ul
+    display: flex
+    justify-content: flex-start
+    align-items: baseline
+    li
+      margin-right: 1px
+      a
+        display: block
+        background-color: #f4f4f4
+        padding: 10px 15px
+        font-size: 12px
+        text-decoration: none
+        text-transform: uppercase
+        color:  #1f3045
+        opacity: 0.8
+      a:hover
+        background-color: rgba(198,79,21,0.7)
+        color: #f4f4f4
+      a:active
+        color: #c64f15
+        background-color: #f4f4f4
+        opacity: 1
+
+.contacts-nav ul li.active-link
+  border-right: 3px solid #c64f15
+  border-top: 3px solid #c64f15
+  border-left: 3px solid #c64f15
+  border-bottom: none
+  border-top-left-radius: 7px
+  border-top-right-radius: 7px
+  margin: 0 1px
+  a
+    background-color: #c64f15
+    color: #f4f4f4
+    cursor: default
+    opacity: 1
+
+#ascon-contacts
+  margin: 30px 0
+#ascon-contacts h4
+  font-family: 'Gotham Pro Bold', sans-serif
+  font-size: 18px
+  text-transform: uppercase
+  padding: 0 0 15px 30px
+  color: #6d6b6b
+
+.contacts-box
+  display: flex
+  flex-direction: row-reverse
+  justify-content: center
+  align-items: center
+  margin-bottom: 3%
+  margin-left: 2%
+.ascon-contacts
+  flex: 1
+  padding: 2%
+  h3
+    font-family: "Gotham Pro Bold", sans-serif
+    font-size: 20px
+    color: #c64f15
+    text-transform: capitalize
+  p
+    font-weight: lighter
+    font-size: 14px
+    span
+      display: inline-block
+      width: 100px
+      max-width: 100%
+      font-family: "Gotham Pro Bold", sans-serif
+      font-size: 14px
+    .email
+      font-family: "Gotham Pro Regular", sans-serif
+      text-decoration: underline
+      color: blue
+
+.contacts-distributors .sub-nav
+  margin: 20px 0
+  div
+    padding: 2% 4%
+  h4
+    font-size: 20px
+    margin-bottom: 1%
+  h3
+    font-family: "Gotham Pro Bold", sans-serif
+    font-size: 18px
+    color: #c64f15
+    margin-bottom: 1%
+    text-transform: capitalize
+  p
+    font-weight: lighter
+    font-size: 14px
+    span
+      display: inline-block
+      width: 120px
+      max-width: 100%
+      font-family: "Gotham Pro Bold", sans-serif
+      font-size: 14px
+    .email
+      font-family: "Gotham Pro Regular", sans-serif
+      text-decoration: underline
+      color: blue
+
+/*contacts part END*/
+
+
+
+/*terms and conditions part START*/
+
+.terms-and-conditions-poster
+  height: 200px
+  position: relative
+  background: url(../images/banners/terms-and-conditions-poster.png) no-repeat center
+  opacity: 0.9
+  .poster-txt
+    z-index: 2
+    padding: 3% 4%
+    h3
+      font-family: 'Gotham Pro Bold', sans-serif
+      color: #fff
+      font-size: 30px
+      font-weight: 600
+    p
+      font-size: 15px
+      color: #fff
+
+.terms-and-conditions-poster nav
+  position: absolute
+  bottom: 0
+  margin-left: 10px
+  ul
+    display: flex
+    justify-content: flex-start
+    align-items: baseline
+    font-family: "Gotham Pro Medium", sans-serif
+    li
+      margin-right: 1px
+      background-color: #f4f4f4
+      padding: 10px 15px
+      font-size: 12px
+      text-decoration: none
+      text-transform: uppercase
+      letter-spacing: 0.5px
+      color:  #1f3045
+      opacity: 0.9
+    li:hover
+      background-color: rgba(198,79,21,0.7)
+      color: #f4f4f4
+      cursor: pointer
+    li:active
+      color: #c64f15
+      background-color: #f4f4f4
+      opacity: 1
+
+.terms-and-conditions-poster nav ul li.active-link
+  border-right: 3px solid #c64f15
+  border-top: 3px solid #c64f15
+  border-left: 3px solid #c64f15
+  border-bottom: none
+  border-top-left-radius: 7px
+  border-top-right-radius: 7px
+  margin: 0 1px
+  opacity: 1
+  background-color: #c64f15
+  color: #f4f4f4
+  cursor: default
+
+.sub-nav
+  ul
+    display: flex
+    font-family: "Gotham Pro Bold", sans-serif
+    text-transform: uppercase
+    list-style-type: none
+    font-size: 11px
+    font-weight: 400
+    color:  #1f3045
+    cursor: pointer
+    margin-left: 10px
+    li
+      display: block
+      padding: 15px
+      &.active-link, .active-link:hover
+        color: #c64f15
+        cursor: default
+        background-color: #f4f4f4
+    li:hover
+      color: #c64f15
+  hr
+    margin: 0 auto
+    width: 98%
+    border-bottom: none
+
+#pilot-link
+  ul
+    margin-left: 180px
+
+
+.terms-and-conditions section
+  h4
+    font-family: 'Gotham Pro Bold', sans-serif
+    font-size: 18px
+    text-transform: uppercase
+    text-align: center
+    padding: 30px 0 10px 0
+  p
+    line-height: 20px
+    display: block
+    padding: 0 20px
+
+.background-option
+  background: #f5f5f5
+  margin: 40px 0 auto
+  margin-bottom: 50px
+  padding-bottom: 25px
+
+.options-block
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  .options-square
+    margin: 2%
+    padding: 20px 10px
+    background: #fff
+    width: 300px
+    height: 300px
+    transform: translateZ(0)
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    &:hover
+      transform: translateZ(50px)
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35)
+    img
+      display: block
+      margin: 0 auto
+    h3
+      font-family: 'Gotham Pro Bold', sans-serif
+      font-size: 14px
+      color: #1f3045
+      margin-top: 12px
+      text-align: center
+      text-transform: uppercase
+      vertical-align: middle
+      span
+        font-size: 17px
+    p
+      line-height: 20px
+      text-align: center
+
+
+.compass-variants .options-square
+  height: 100%
+  span
+    display: block
+    font-size: 13px
+    line-height: 20px
+    font-weight: 200
+    text-align: center
+    &:hover
+      cursor: pointer
+    i
+      display: block
+      color: #1f3045
+      font-size: 18px
+      margin: 0 auto
+    i:hover
+      color: #c64f15
+      cursor: pointer
+  .benefits
+    line-height: 25px
+    font-weight: 600
+
+
+
+
+
+
+section .button
+    display: flex
+    justify-content: center
+    margin: 50px 0
+
+.table-option
+  h4
+    font-family: 'Gotham Pro Bold', sans-serif
+    font-size: 18px
+    text-transform: uppercase
+    text-align: center
+    padding: 20px 0
+    color: #1f3045
+  .button
+    display: flex
+    justify-content: center
+    margin-top: 50px
+
+.div-table
+  display: flex
+  justify-content: space-between
+  flex-wrap: nowrap
+  padding: 20px 10px
+  i
+    color: #c64f15
+  .main-column
+    flex: 3
+    padding-left: 20px
+  .simple-column
+    flex: 1
+    text-align: center
+    align-items: center
+
+.div-table:nth-child(odd)
+  background: #f5f5f5
+.div-table:last-child
+  margin-bottom: 70px
+.div-table .head
+  font-weight: 900
+
+
+
+
+
+
+a.action-button-2
+  display: inline-block
+  text-align: center
+  font-family: 'Gotham Pro Bold', sans-serif
+  font-size: 16px
+  color: #1f3045
+  text-transform: uppercase
+  text-decoration: none
+  background-color: #f5f5f5
+  padding: 15px 20px
+  transition: all 0.3s ease-in-out
+  -webkit-box-shadow: 0 0 15px 0 rgba(198,79,21,0.6)
+  -moz-box-shadow: 0 0 15px 0 rgba(198,79,21,0.6)
+  box-shadow: 0 0 15px 0 rgba(198,79,21,0.6)
+  &:hover
+    background-color: #c64f15
+    color: #fff
+    border-color: #c64f15
+
+
+
+
+/*terms and conditions part END*/
+
+
+
+
+/*new partner registration START*/
+/*contacts part START*/
+.registration-poster
+  height: 200px
+  position: relative
+  .poster-txt
+    z-index: 2
+    padding: 3% 4%
+    h3
+      font-family: 'Gotham Pro Bold', sans-serif
+      color: #fff
+      font-size: 30px
+      font-weight: 600
+    p
+      font-size: 15px
+      color: #fff
+      line-height: 1.5em
+
+.registration-poster
+  background: url(../images/banners/new-partner-registration.jpg) no-repeat top center
+  opacity: 0.9
+
+.new-partner-registration h4
+  padding: 30px 0 5px 10px
+  font-family: "Gotham Pro Bold", sans-serif
+  font-size: 20px
+  font-weight: bold
+  text-transform: uppercase
+.registration-form h3
+  display: block
+  font-size: 18px
+  text-transform: uppercase
+  padding: 10px 0 10px 180px
+  color: #6d6b6b
+  background-color: #f5f5f5
+  margin-bottom: 1px
+  font-weight: bold
+  i
+    color: #c64f15
+    padding-left: 50px
+
+.registration-form
+  margin-top: 10px
+  .block
+    margin-bottom: 20px
+    label
+      display: block
+      margin: 20px auto
+      > span
+        display: inline-block
+        text-align: right
+        vertical-align: top
+        width: 170px
+        font-weight: 400
+        padding-top: 8px
+        padding-right: 5px
+    span.required
+      color: #c64f15
+    input.input-field, .select-field,  .textarea-field
+      width: 400px
+    input.input-field, .tel-number-field, .textarea-field, .select-field
+      box-sizing: border-box
+      border: 1px solid #C2C2C2
+      box-shadow: 1px 1px 4px #EBEBEB
+      border-radius: 3px
+      padding: 7px
+      outline: none
+    .input-field:focus, .textarea-field:focus, .select-field:focus
+      border: 1px solid #1f3045
+    input
+      &[type=submit]
+        border: 1px solid #ddd
+        border-radius: 3px
+        padding: 8px 15px 8px 15px
+        background: #fff
+        color: #1f3045
+        transition: all 0.3s ease-in-out
+      &[type=submit]:hover
+        background: #c64f15
+        color: #fff
+        box-shadow: 1px 1px 4px #DADADA
+        border-radius: 3px
+
+.registration-form  a, button
+  display: inline-block
+  margin-top: 20px
+  margin-left: 460px
+  border: 1px solid #b5b5b5
+  border-radius: 3px
+  color: #1f3045
+  text-decoration: none
+  padding: 7px 10px
+  font-family: "Gotham Pro Regular", sans-serif
+  font-size: 14px
+  background-color: rgba(238, 238, 238, 0.72)
+  transition: all 0.3s ease-in-out
+  &:hover
+    cursor: pointer
+    background-color: #c64f15
+    border-color: #c64f15
+    color: #ffffff
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.16)
+
+#send-form
+  img
+    margin-left: 170px
+#agree
+  margin-left: 170px
+
+/*new partner registration END*/
+
+
+
+
+/**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+.pulsate-fwd
+  -webkit-animation: pulsate-fwd 0.8s ease-in-out infinite both
+  animation: pulsate-fwd 0.8s ease-in-out infinite both
+
+@-webkit-keyframes pulsate-fwd
+  0%
+    -webkit-transform: scale(1)
+    transform: scale(1)
+  50%
+    -webkit-transform: scale(1.1)
+    transform: scale(1.1)
+  100%
+    -webkit-transform: scale(1)
+    transform: scale(1)
+
+
+@keyframes pulsate-fwd
+  0%
+    -webkit-transform: scale(1)
+    transform: scale(1)
+  50%
+    -webkit-transform: scale(1.1)
+    transform: scale(1.1)
+  100%
+    -webkit-transform: scale(1)
+    transform: scale(1)
+
+
+
+
+
+
+/*JavaScript*/
+.hide-element
+  display: none
+
+
+

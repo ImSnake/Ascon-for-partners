@@ -1,0 +1,111 @@
+
+#slider
+  position: relative
+  height: 260px
+  width: 100%
+
+#sliderTrigger
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  bottom: 0
+  padding-bottom: 10px
+  list-style-type: none
+  li
+    position: relative
+    z-index: 10
+    display: block
+    color: #fff
+    opacity: 0.6
+    margin: 0 10px
+    transition: all 0.3s linear
+  li:hover
+    cursor: pointer
+    color: #c64f15
+    opacity: 0.8
+  li.active
+    transform: scale(1.5)
+a
+  &.control_prev, &.control_next
+    position: absolute
+    bottom: 40%
+    z-index: 3
+    display: block
+    padding: 0.7% 1%
+    background: #fff
+    color: #1f3045
+    font-size: 15px
+    text-decoration: none
+    opacity: 0.7
+    border-radius: 50%
+    transition: all 0.2s ease
+  &.control_prev:hover, &.control_next:hover
+    color: #c64f15
+    opacity: 1
+    transform: scale(1.1)
+  &.control_prev
+    margin-left: 10px
+  &.control_next
+    right: 0
+    margin-right: 10px
+
+.first-image
+  position: relative
+  height: 260px
+  background: url(../images/banners/main-third-slide.png) no-repeat top
+  opacity: 0.93
+  z-index: 2
+  padding: 3% 7%
+  h3
+    font-family: 'Gotham Pro Bold', sans-serif
+    color: #fff
+    font-size: 30px
+    font-weight: 600
+    text-transform: uppercase
+  p
+    color: #fff
+    line-height: 1.5em
+    width: 90%
+    margin: 2% 0 4% 0
+
+.second-image
+  position: relative
+  height: 260px
+  background: url(../images/banners/main-second-slide.png) no-repeat top
+  opacity: 0.9
+  z-index: 2
+  padding: 3.5% 7%
+  h3
+    font-family: 'Gotham Pro Bold', sans-serif
+    color: #fff
+    font-size: 30px
+    font-weight: 600
+    text-transform: uppercase
+  p
+    color: #fff
+    line-height: 1.5em
+    width: 80%
+    margin-bottom: 4%
+
+.third-image
+  position: relative
+  height: 260px
+  background: url(../images/banners/main-first-slide.png) no-repeat top
+  opacity: 0.9
+  z-index: 2
+  padding: 3% 7%
+  h3
+    font-family: 'Gotham Pro Bold', sans-serif
+    color: #fff
+    font-size: 30px
+    font-weight: 600
+    text-transform: uppercase
+  p
+    color: #fff
+    line-height: 1.5em
+    width: 90%
+    margin: 2% 0 4% 0
+
+
