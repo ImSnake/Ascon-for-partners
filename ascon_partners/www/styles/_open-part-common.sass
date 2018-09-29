@@ -13,6 +13,7 @@ footer
   background-color: #e6e6e6
 /* fix footer in the end of the screen - END*/
 
+
 /* header START*/
 header
   background-color: #505050
@@ -75,7 +76,6 @@ nav a
       display: block
       width: 100px
 
-
 .partners-nav a
   display: block
   color: #1f3045
@@ -110,6 +110,7 @@ i.register
   background-blend-mode: lighten
   transform: scale(1.1)
 /* header-first-part END*/
+
 
 /* header second part START*/
 .second-part
@@ -165,6 +166,7 @@ a.back-to-main:hover .scale-in-center
   transform: scale(1.3)
 /* header second part START*/
 
+
 /*pre-footer START*/
 .pre-footer
   background-color: #505050
@@ -197,6 +199,7 @@ a.back-to-main:hover .scale-in-center
     color: #c64f15
     transition: all 0.3s ease-in-out
 
+
 /*footer START*/
 footer
   background-color: #f4f4f4
@@ -211,6 +214,7 @@ footer img
 footer i
   margin-left: 10px
 /*footer END*/
+
 
 /*button-styles START*/
 a.action-button-1
@@ -229,6 +233,7 @@ a.action-button-1
     border-color: #c64f15
     box-shadow: 0 0 6px 2px rgba(217, 210, 217, 0.5)
 /*button-styles END*/
+
 
 /*question-icon START*/
 .question-icon
@@ -338,7 +343,6 @@ a.action-button-1
 .restore-password
   width: 400px
 
-
 .login-style-1,
 .form-style-2,
 .restore-password
@@ -394,7 +398,6 @@ a.action-button-1
 
 
 /*index part START*/
-
 .products-for-partners
   display: flex
   flex-wrap: wrap
@@ -565,13 +568,10 @@ a.action-button-1
       font-family: "Gotham Pro Regular", sans-serif
       text-decoration: underline
       color: blue
-
 /*contacts part END*/
 
 
-
 /*terms and conditions part START*/
-
 .terms-and-conditions-poster
   height: 200px
   position: relative
@@ -599,8 +599,10 @@ a.action-button-1
     align-items: baseline
     font-family: "Gotham Pro Medium", sans-serif
     li
-      margin-right: 1px
+      //margin-right: 1px
       background-color: #f4f4f4
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
       padding: 10px 15px
       font-size: 12px
       text-decoration: none
@@ -624,7 +626,7 @@ a.action-button-1
   border-bottom: none
   border-top-left-radius: 7px
   border-top-right-radius: 7px
-  margin: 0 1px
+  //margin: 0 1px
   opacity: 1
   background-color: #c64f15
   color: #f4f4f4
@@ -647,7 +649,7 @@ a.action-button-1
       &.active-link, .active-link:hover
         color: #c64f15
         cursor: default
-        background-color: #f4f4f4
+    //background-color: #f4f4f4
     li:hover
       color: #c64f15
   hr
@@ -658,7 +660,6 @@ a.action-button-1
 #pilot-link
   ul
     margin-left: 180px
-
 
 .terms-and-conditions section
   h4
@@ -695,6 +696,12 @@ a.action-button-1
     &:hover
       transform: translateZ(50px)
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35)
+      .details, .no-details
+        color: #c64f15
+        i
+          color: #c64f15
+          animation-name: pulsate-fwd
+          -webkit-animation-name: pulsate-fwd
     img
       display: block
       margin: 0 auto
@@ -712,33 +719,24 @@ a.action-button-1
       line-height: 20px
       text-align: center
 
-
 .compass-variants .options-square
   height: 100%
+  &:hover
+    cursor: pointer
   span
     display: block
     font-size: 13px
     line-height: 20px
     font-weight: 200
     text-align: center
-    &:hover
-      cursor: pointer
     i
       display: block
       color: #1f3045
       font-size: 18px
       margin: 0 auto
-    i:hover
-      color: #c64f15
-      cursor: pointer
   .benefits
     line-height: 25px
     font-weight: 600
-
-
-
-
-
 
 section .button
     display: flex
@@ -780,11 +778,6 @@ section .button
 .div-table .head
   font-weight: 900
 
-
-
-
-
-
 a.action-button-2
   display: inline-block
   text-align: center
@@ -803,17 +796,12 @@ a.action-button-2
     background-color: #c64f15
     color: #fff
     border-color: #c64f15
-
-
-
-
 /*terms and conditions part END*/
 
 
 
 
 /*new partner registration START*/
-/*contacts part START*/
 .registration-poster
   height: 200px
   position: relative
@@ -834,32 +822,48 @@ a.action-button-2
   background: url(../images/banners/new-partner-registration.jpg) no-repeat top center
   opacity: 0.9
 
-.new-partner-registration h4
-  padding: 30px 0 5px 10px
+//.new-partner-registration h4
+  margin: 30px 10px 20px 10px
   font-family: "Gotham Pro Bold", sans-serif
   font-size: 20px
   font-weight: bold
   text-transform: uppercase
-.registration-form h3
+  text-align: center
+
+.registration-form h3, .send-success h3
   display: block
   font-size: 18px
   text-transform: uppercase
-  padding: 10px 0 10px 180px
-  color: #6d6b6b
-  background-color: #f5f5f5
-  margin-bottom: 1px
+  padding: 13px
+  text-align: center
+  color: #505050
+  background-color: #E6E6E7
+  margin-left: -5px
+  margin-right: -5px
+  margin-bottom: 30px
   font-weight: bold
+  border-radius: 10px
   i
-    color: #c64f15
-    padding-left: 50px
+    padding-right: 30px
+
+form:focus-within i.shake-horizontal
+  color: #c64f15
+  animation-name: shake-horizontal
+  -webkit-animation-name: shake-horizontal
 
 .registration-form
-  margin-top: 10px
+  margin: 40px
+  padding-bottom: 20px
+  background-color: #f9f9f9
   .block
-    margin-bottom: 20px
+    margin-bottom: 10px
     label
       display: block
       margin: 20px auto
+      text-align: center
+      margin-right: 70px
+      &#agree
+        margin: 0 auto
       > span
         display: inline-block
         text-align: right
@@ -895,33 +899,129 @@ a.action-button-2
         box-shadow: 1px 1px 4px #DADADA
         border-radius: 3px
 
-.registration-form  a, button
-  display: inline-block
-  margin-top: 20px
-  margin-left: 460px
-  border: 1px solid #b5b5b5
-  border-radius: 3px
-  color: #1f3045
-  text-decoration: none
-  padding: 7px 10px
-  font-family: "Gotham Pro Regular", sans-serif
-  font-size: 14px
-  background-color: rgba(238, 238, 238, 0.72)
+.registration-form button
+  margin: 20px 0
+  border: none
+  outline: none
+  font-family: inherit
+  font-size: inherit
+  border-radius: 20px
+  color: #6d6b6b
+  background-color: #fff
+  padding: 10px 20px
+  box-shadow: 0 0 3px 0 #999
   transition: all 0.3s ease-in-out
   &:hover
     cursor: pointer
     background-color: #c64f15
-    border-color: #c64f15
     color: #ffffff
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.16)
+    box-shadow: 0 2px 24px 0 rgba(201, 79, 0, 0.8)
+  &:active
+    color: #6d6b6b
+    background-color: #E6E6E7
+    box-shadow: 0 1px 12px 0 rgba(235, 236, 236, 0.8)
 
-#send-form
+#send-form, #agree
   img
-    margin-left: 170px
-#agree
-  margin-left: 170px
+    display: block
+    margin: 0 auto
 
+.btn-position
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 10%
+  &.first
+    margin: 0 75%
+
+.new-partner-registration .fa-check
+  color: #6db61e
 /*new partner registration END*/
+
+
+
+/*question-answer START*/
+.faq-poster
+  background: url(../images/banners/questions-answers.jpg) no-repeat top center
+  opacity: 0.9
+
+.faq-poster
+  height: 150px
+  position: relative
+  margin-bottom: 20px
+  .poster-txt
+    z-index: 2
+    padding: 25px 50px 20px 50px
+    h3
+      font-family: 'Gotham Pro Bold', sans-serif
+      color: #fff
+      font-size: 30px
+      font-weight: 600
+    p
+      font-size: 15px
+      color: #fff
+      line-height: 1.5em
+
+.faq-list
+  color: #273853
+  .answers
+    margin: 1px 0 20px 0
+  h3
+    display: block
+    font-size: 18px
+    text-transform: uppercase
+    margin-top: 5px
+    padding: 13px 0 13px 70px
+    background-color: #E6E6E7
+    font-weight: bold
+    border-radius: 15px
+  h2
+    display: block
+    font-size: 14px
+    padding: 11px 0 11px 75px
+    margin: 0 10px
+    background-color: #f9f9f9
+    &:hover
+      font-weight: bold
+      cursor: pointer
+      color: #c64f15
+      &i
+        font-size: 12px
+  span
+    padding: 10px 0 10px 110px
+    font-weight: 400
+    margin-bottom: 1px
+  a
+    display: inline-block
+    text-align: center
+    text-decoration: none
+    border-radius: 20px
+    color: #6d6b6b
+    font-size: 13px
+    line-height: 18px
+    margin: 30px 0 30px 50px
+    padding: 10px 20px
+    box-shadow: 0 0 3px 0 #999
+    transition: all 0.3s ease-in-out
+    i
+      font-size: 18px
+    &:hover
+      color: #f9f9f9
+      background-color: #c64f15
+      opacity: 0.9
+      box-shadow: 0 2px 24px 0 rgba(201, 79, 0, 0.8)
+    &:active
+      color: #6d6b6b
+      background-color: #E6E6E7
+      box-shadow: 0 1px 12px 0 rgba(235, 236, 236, 0.8)
+  h2:hover i.fa-angle-double-down, h2:hover i.fa-angle-double-up
+    animation-name: pulsate-fwd
+    -webkit-animation-name: pulsate-fwd
+
+/*question-answer END*/
+
+
+
 
 
 
@@ -931,8 +1031,12 @@ a.action-button-2
  * animation pulsate-fwd
  * ----------------------------------------
 .pulsate-fwd
-  -webkit-animation: pulsate-fwd 0.8s ease-in-out infinite both
-  animation: pulsate-fwd 0.8s ease-in-out infinite both
+  -webkit-animation: pulsate-fwd 0.8s ease-in-out 6 both
+  animation: pulsate-fwd 0.8s ease-in-out 6 both
+
+i.pulsate-fwd
+  animation-name: none
+  -webkit-animation-name: none
 
 @-webkit-keyframes pulsate-fwd
   0%
@@ -944,8 +1048,6 @@ a.action-button-2
   100%
     -webkit-transform: scale(1)
     transform: scale(1)
-
-
 @keyframes pulsate-fwd
   0%
     -webkit-transform: scale(1)
@@ -957,14 +1059,81 @@ a.action-button-2
     -webkit-transform: scale(1)
     transform: scale(1)
 
+/**
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+.shake-horizontal
+  -webkit-animation: shake-horizontal 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s 1 both
+  animation: shake-horizontal 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s 1 both
 
+i.shake-horizontal
+  animation-name: none
+  -webkit-animation-name: none
 
+@-webkit-keyframes shake-horizontal
+  0%,
+  100%
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+  10%,
+  30%,
+  50%,
+  70%
+    -webkit-transform: translateX(-10px)
+    transform: translateX(-10px)
+  20%,
+  40%,
+  60%
+    -webkit-transform: translateX(10px)
+    transform: translateX(10px)
+  80%
+    -webkit-transform: translateX(8px)
+    transform: translateX(8px)
+  90%
+    -webkit-transform: translateX(-8px)
+    transform: translateX(-8px)
+
+@keyframes shake-horizontal
+  0%,
+  100%
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+  10%,
+  30%,
+  50%,
+  70%
+    -webkit-transform: translateX(-10px)
+    transform: translateX(-10px)
+  20%,
+  40%,
+  60%
+    -webkit-transform: translateX(10px)
+    transform: translateX(10px)
+  80%
+    -webkit-transform: translateX(8px)
+    transform: translateX(8px)
+  90%
+    -webkit-transform: translateX(-8px)
+    transform: translateX(-8px)
+
+/*question-answer END*/
 
 
 
 /*JavaScript*/
+.bolded
+  font-weight: bold
+
+.show-element
+  display: block
+
 .hide-element
   display: none
+
+
+
+
 
 
 

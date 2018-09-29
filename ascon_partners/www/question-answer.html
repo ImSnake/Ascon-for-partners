@@ -19,17 +19,28 @@
                 <div id='close-btn-2' class="close-btn"><i class="fas fa-times"></i></div>
                 <div class="form-style-2-heading"><p>Пожалуйста, задайте ваш вопрос</p></div>
                 <form action="#" method="post">
-                    <label for="question-name"><span>Имя <span class="required">*</span></span><input id='question-name' type="text" class="input-field" value="" required></label>
-                    <label for="question-email"><span>Email <span class="required">*</span></span><input id='question-email' type="email" class="input-field" value="" required></label>
-                    <label for="question-phone"><span>Телефон <span class="required">*</span></span><input id='question-phone' class="input-field" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="8-900-000-0000" required></label>
-                    <label for="question-options"><span>Тема </span><select id="question-options" name="question-options" class="select-field">
+                    <label for="question-name"><span>Имя <span class="required">*</span></span><input
+                            class="input-field"
+                            id='question-name'
+                            required
+                            type="text" value=""></label>
+                    <label for="question-email"><span>Email <span class="required">*</span></span><input
+                            class="input-field" id='question-email' required type="email" value=""></label>
+                    <label for="question-phone"><span>Телефон <span class="required">*</span></span><input
+                            class="input-field" id='question-phone' pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="8-900-000-0000" required type="tel"></label>
+                    <label for="question-options"><span>Тема </span><select class="select-field"
+                                                                            id="question-options"
+                                                                            name="question-options">
                         <option value="General Question">General</option>
                         <option value="Advertise">Products</option>
                         <option value="Partnership">Partnership</option>
                         <option value="Other">Other</option>
                     </select></label>
-                    <label for="question-message"><span>Сообщение <span class="required">*</span></span><textarea id="question-message" class="textarea-field" required></textarea></label>
-                    <label for="question-submit"><span>&nbsp;</span><input id='question-submit' type="submit" value="Отправить"></label>
+                    <label for="question-message"><span>Сообщение <span class="required">*</span></span><textarea
+                            class="textarea-field" id="question-message" required></textarea></label>
+                    <label for="question-submit"><span>&nbsp;</span><input id='question-submit' type="submit"
+                                                                           value="Отправить"></label>
                 </form>
             </div>
         </div>
@@ -41,9 +52,12 @@
                 <div id='close-btn-1' class="close-btn"><i class="fas fa-times "></i></div>
                 <div class="login-style-1-heading"><p>Войти в личный кабинет партнера</p></div>
                 <form action="#" method="post">
-                    <label for="login-email"><span>Email\login<span class="required">*</span></span><input id='login-email' type="email" class="input-field" value="" required></label>
-                    <label for="login-password"><span>Password<span class="required">*</span></span><input id='login-password' type="password" class="input-field" value="" required></label>
-                    <label for="login-send"><span>&nbsp;</span><input id='login-send' type="submit" value="Войти"></label>
+                    <label for="login-email"><span>Email\login<span class="required">*</span></span><input
+                            class="input-field" id='login-email' required type="email" value=""></label>
+                    <label for="login-password"><span>Password<span class="required">*</span></span><input
+                            class="input-field" id='login-password' required type="password" value=""></label>
+                    <label for="login-send"><span>&nbsp;</span><input id='login-send' type="submit"
+                                                                      value="Войти"></label>
                 </form>
                 <div class="login-style-1-ending">
                     <a href="#" id="restore-password">Восстановить пароль</a><br>
@@ -55,8 +69,10 @@
                 <div class="login-style-1-heading"><p>Восстановление пароля</p>
                     <span>На указанный при регистрации email будет отправлено письмо с паролем</span></div>
                 <form action="#" method="post">
-                    <label for="restore-password-email"><span>Email<span class="required">*</span></span><input id='restore-password-email' type="email" class="input-field" value="" required></label>
-                    <label for="restore-password-send"><span> </span><input id='restore-password-send' type="submit" value="Получить пароль"></label>
+                    <label for="restore-password-email"><span>Email<span class="required">*</span></span><input
+                            class="input-field" id='restore-password-email' required type="email" value=""></label>
+                    <label for="restore-password-send"><span> </span><input id='restore-password-send' type="submit"
+                                                                            value="Получить пароль"></label>
                 </form>
             </div>
         </div>
@@ -104,7 +120,63 @@
 
         </div>
 
-        <section class="content-box"><h2 style="margin-top:20px; color: #c94f00; font-size: 16px; font-weight: 800; text-align: center">ВОПРОС - ОТВЕТ</h2></section>
+        <div class="content-box question-answer">
+            <div class="faq-poster">
+                <div class="poster-txt">
+                    <h3>Часто задаваемые вопросы</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus exercitationem impedit
+                        inventore ipsum laborum omnis porro sequi sint ut voluptatibus!</p>
+                </div>
+            </div>
+
+            <div class="faq-list">
+                <div class="answers">
+                    <h3>Общие</h3>
+                    <h2><i class="fas fa-angle-double-down pulsate-fwd"></i><i
+                            class="fas fa-angle-double-up pulsate-fwd hide-element"></i>&nbsp;&nbsp;&nbsp;Можно ли
+                        осуществить поставку решений АСКОН не являясь партнером компании АСКОН?</h2>
+                    <span class="show-element hide-element">По умолчанию поставка решений АСКОН возможна только через компании имеющие партнерский статус</span>
+
+                    <h2><i class="fas fa-angle-double-down pulsate-fwd"></i><i
+                            class="fas fa-angle-double-up pulsate-fwd hide-element"></i>&nbsp;&nbsp;&nbsp;Каков срок
+                        действия партнерского статуса?</h2>
+                    <span class="show-element hide-element">Партнерский статус по умолчанию выдается до конца текущего календарного года с возможностью его дальнейшего продления</span>
+
+                    <h2><i class="fas fa-angle-double-down pulsate-fwd"></i><i
+                            class="fas fa-angle-double-up pulsate-fwd hide-element"></i>&nbsp;&nbsp;&nbsp;Возможна ли
+                        регистрация сделки без кода партнера?</h2>
+                    <span class="show-element hide-element">Мы готовы рассмотреть этот вопрос в индивидуальном порядке. Для этого необходимо заполнить форму авторизации и отправить ее дистрибьютору</span>
+
+                    <h2><i class="fas fa-angle-double-down pulsate-fwd"></i><i
+                            class="fas fa-angle-double-up pulsate-fwd hide-element"></i>&nbsp;&nbsp;&nbsp;Может ли
+                        партнер приобретать сетевые/локальные лицензии?</h2>
+                    <span class="show-element hide-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto at aut blanditiis commodi, consequatur corporis cupiditate dignissimos exercitationem fugiat illum minima optio, quas veniam, voluptates. Aliquam dolores rem veniam?</span>
+
+                    <h2><i class="fas fa-angle-double-down pulsate-fwd"></i><i
+                            class="fas fa-angle-double-up pulsate-fwd hide-element"></i>&nbsp;&nbsp;&nbsp;Может ли
+                        партнер приобретать временные лицензии?</h2>
+                    <span class="show-element hide-element">Вопрос поставки временных лицензий обсуждается индивидуально по каждому конкретному случаю</span>
+
+                    <h3>Лицензирование</h3>
+                    <h2><i class="fas fa-angle-double-down pulsate-fwd"></i><i
+                            class="fas fa-angle-double-up pulsate-fwd hide-element"></i>&nbsp;&nbsp;&nbsp;Может ли
+                        партнер получать техническую поддержку по продуктам своего заказчика через партнерский отдел?
+                    </h2>
+                    <span class="show-element hide-element">Техническую подержку всем лицензионным пользователям оказывает Служба технической поддержки АСКОН (support@ascon.ru)</span>
+
+                    <h3>Поставка</h3>
+                    <h2><i class="fas fa-angle-double-down pulsate-fwd"></i><i
+                            class="fas fa-angle-double-up pulsate-fwd hide-element"></i>&nbsp;&nbsp;&nbsp;Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci assumenda?</h2>
+                    <span class="show-element hide-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa eius eveniet facilis ipsa laborum libero modi molestias perferendis possimus quaerat quam quod ratione repudiandae, rerum sapiente sint veritatis voluptatibus.</span>
+
+                </div>
+
+                <a class="faq" href="#" id="question-nav"><i class="far fa-question-circle"></i> &nbsp;Другой вопрос
+                </a>
+
+            </div>
+        </div>
 
         <div id="question-icon" class="question-icon">
             <a class="flip-vertical-right" href="#"><span>Задать вопрос</span></a>
@@ -130,7 +202,8 @@
                         <ul>
                             <li><a href="http://kompas.ru/kompas-3d/about/" target="_blank">КОМПАС-3D</a></li>
                             <li><a href="http://kompas.ru/kompas-grafik/about/" target="_blank">КОМПАС-График</a></li>
-                            <li><a href="http://kompas.ru/kompas-stroitel/about/" target="_blank">КОМПАС-Строитель</a></li>
+                            <li><a href="http://kompas.ru/kompas-stroitel/about/" target="_blank">КОМПАС-Строитель</a>
+                            </li>
                             <li><a href="http://pilotems.com/" target="_blank">Pilot-ICE</a></li>
                         </ul>
                     </div>
@@ -138,9 +211,12 @@
                         <h3>/ Другие сайты Аскон</h3>
                         <ul>
                             <li><a href="http://ascon.ru" target="_blank">Основной сайт АСКОН</a></li>
-                            <li><a href="http://certification.ascon.ru/about_certification/" target="_blank">Единая система сертификации АСКОН</a></li>
-                            <li><a href="http://support.ascon.ru/conditions/" target="_blank">Служба поддержки пользователей</a></li>
-                            <li><a href="http://edu.ascon.ru/main/news/" target="_blank">Образовательная программа АСКОН</a></li>
+                            <li><a href="http://certification.ascon.ru/about_certification/" target="_blank">Единая
+                                система сертификации АСКОН</a></li>
+                            <li><a href="http://support.ascon.ru/conditions/" target="_blank">Служба поддержки
+                                пользователей</a></li>
+                            <li><a href="http://edu.ascon.ru/main/news/" target="_blank">Образовательная программа
+                                АСКОН</a></li>
                         </ul>
                     </div>
                 </div>

@@ -77,7 +77,7 @@ body {
 
 .content-box {
   max-width: 1200px;
-  min-width: 680px;
+    min-width: 800px;
   margin: 0 auto; }
 
 /* fix footer to the end of the screen - START */
@@ -725,8 +725,9 @@ a.action-button-1 {
     align-items: baseline;
     font-family: "Gotham Pro Medium", sans-serif; }
     .terms-and-conditions-poster nav ul li {
-      margin-right: 1px;
       background-color: #f4f4f4;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
       padding: 10px 15px;
       font-size: 12px;
       text-decoration: none;
@@ -750,7 +751,6 @@ a.action-button-1 {
   border-bottom: none;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  margin: 0 1px;
   opacity: 1;
   background-color: #c64f15;
   color: #f4f4f4;
@@ -771,8 +771,8 @@ a.action-button-1 {
     padding: 15px; }
     .sub-nav ul li.active-link, .sub-nav ul li .active-link:hover {
       color: #c64f15;
-      cursor: default;
-      background-color: #f4f4f4; }
+        cursor: default;
+    }
   .sub-nav ul li:hover {
     color: #c64f15; }
 .sub-nav hr {
@@ -817,6 +817,16 @@ a.action-button-1 {
     .options-block .options-square:hover {
       transform: translateZ(50px);
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35); }
+
+.options-block .options-square:hover .details, .options-block .options-square:hover .no-details {
+    color: #c64f15;
+}
+
+.options-block .options-square:hover .details i, .options-block .options-square:hover .no-details i {
+    color: #c64f15;
+    animation-name: pulsate-fwd;
+    -webkit-animation-name: pulsate-fwd;
+}
     .options-block .options-square img {
       display: block;
       margin: 0 auto; }
@@ -836,22 +846,21 @@ a.action-button-1 {
 
 .compass-variants .options-square {
   height: 100%; }
+
+.compass-variants .options-square:hover {
+    cursor: pointer;
+}
   .compass-variants .options-square span {
     display: block;
     font-size: 13px;
     line-height: 20px;
     font-weight: 200;
     text-align: center; }
-    .compass-variants .options-square span:hover {
-      cursor: pointer; }
     .compass-variants .options-square span i {
       display: block;
       color: #1f3045;
       font-size: 18px;
       margin: 0 auto; }
-    .compass-variants .options-square span i:hover {
-      color: #c64f15;
-      cursor: pointer; }
   .compass-variants .options-square .benefits {
     line-height: 25px;
     font-weight: 600; }
@@ -918,7 +927,6 @@ a.action-button-2 {
 
 /*terms and conditions part END */
 /*new partner registration START */
-/*contacts part START */
 .registration-poster {
   height: 200px;
   position: relative; }
@@ -939,33 +947,49 @@ a.action-button-2 {
   background: url(../images/banners/new-partner-registration.jpg) no-repeat top center;
   opacity: 0.9; }
 
-.new-partner-registration h4 {
-  padding: 30px 0 5px 10px;
-  font-family: "Gotham Pro Bold", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.registration-form h3 {
+.registration-form h3, .send-success h3 {
   display: block;
   font-size: 18px;
   text-transform: uppercase;
-  padding: 10px 0 10px 180px;
-  color: #6d6b6b;
-  background-color: #f5f5f5;
-  margin-bottom: 1px;
-  font-weight: bold; }
-  .registration-form h3 i {
+    padding: 13px;
+    text-align: center;
+    color: #505050;
+    background-color: #E6E6E7;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.registration-form h3 i, .send-success h3 i {
+    padding-right: 30px;
+}
+
+form:focus-within i.shake-horizontal {
     color: #c64f15;
-    padding-left: 50px; }
+    animation-name: shake-horizontal;
+    -webkit-animation-name: shake-horizontal;
+}
 
 .registration-form {
-  margin-top: 10px; }
+    margin: 40px;
+    padding-bottom: 20px;
+    background-color: #f9f9f9;
+}
   .registration-form .block {
-    margin-bottom: 20px; }
+      margin-bottom: 10px;
+  }
     .registration-form .block label {
       display: block;
-      margin: 20px auto; }
+        margin: 20px auto;
+        text-align: center;
+        margin-right: 70px;
+    }
+
+.registration-form .block label#agree {
+    margin: 0 auto;
+}
       .registration-form .block label > span {
         display: inline-block;
         text-align: right;
@@ -1000,40 +1024,176 @@ a.action-button-2 {
       box-shadow: 1px 1px 4px #DADADA;
       border-radius: 3px; }
 
-.registration-form a, button {
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 460px;
-  border: 1px solid #b5b5b5;
-  border-radius: 3px;
-  color: #1f3045;
-  text-decoration: none;
-  padding: 7px 10px;
-  font-family: "Gotham Pro Regular", sans-serif;
-  font-size: 14px;
-  background-color: rgba(238, 238, 238, 0.72);
+.registration-form button {
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 20px;
+    color: #6d6b6b;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 0 3px 0 #999;
   transition: all 0.3s ease-in-out; }
-  .registration-form a:hover, button:hover {
+
+.registration-form button:hover {
     cursor: pointer;
     background-color: #c64f15;
-    border-color: #c64f15;
     color: #ffffff;
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.16); }
+    box-shadow: 0 2px 24px 0 rgba(201, 79, 0, 0.8);
+}
 
-#send-form img {
-  margin-left: 170px; }
+.registration-form button:active {
+    color: #6d6b6b;
+    background-color: #E6E6E7;
+    box-shadow: 0 1px 12px 0 rgba(235, 236, 236, 0.8);
+}
 
-#agree {
-  margin-left: 170px; }
+#send-form img, #agree img {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+
+.btn-position.first {
+    margin: 0 75%;
+}
+
+.new-partner-registration .fa-check {
+    color: #6db61e;
+}
 
 /*new partner registration END */
+/*question-answer START */
+.faq-poster {
+    background: url(../images/banners/questions-answers.jpg) no-repeat top center;
+    opacity: 0.9;
+}
+
+.faq-poster {
+    height: 150px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.faq-poster .poster-txt {
+    z-index: 2;
+    padding: 25px 50px 20px 50px;
+}
+
+.faq-poster .poster-txt h3 {
+    font-family: "Gotham Pro Bold", sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.faq-poster .poster-txt p {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+.faq-list {
+    color: #273853;
+}
+
+.faq-list .answers {
+    margin: 1px 0 20px 0;
+}
+
+.faq-list h3 {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    padding: 13px 0 13px 70px;
+    background-color: #E6E6E7;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.faq-list h2 {
+    display: block;
+    font-size: 14px;
+    padding: 11px 0 11px 75px;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+}
+
+.faq-list h2:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: #c64f15;
+}
+
+.faq-list h2:hoveri {
+    font-size: 12px;
+}
+
+.faq-list span {
+    padding: 10px 0 10px 110px;
+    font-weight: 400;
+    margin-bottom: 1px;
+}
+
+.faq-list a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #6d6b6b;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 30px 0 30px 50px;
+    padding: 10px 20px;
+    box-shadow: 0 0 3px 0 #999;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-list a i {
+    font-size: 18px;
+}
+
+.faq-list a:hover {
+    color: #f9f9f9;
+    background-color: #c64f15;
+    opacity: 0.9;
+    box-shadow: 0 2px 24px 0 rgba(201, 79, 0, 0.8);
+}
+
+.faq-list a:active {
+    color: #6d6b6b;
+    background-color: #E6E6E7;
+    box-shadow: 0 1px 12px 0 rgba(235, 236, 236, 0.8);
+}
+
+.faq-list h2:hover i.fa-angle-double-down, .faq-list h2:hover i.fa-angle-double-up {
+    animation-name: pulsate-fwd;
+    -webkit-animation-name: pulsate-fwd;
+}
+
+/*question-answer END */
 /**
  * ----------------------------------------
  * animation pulsate-fwd
  * ---------------------------------------- */
 .pulsate-fwd {
-  -webkit-animation: pulsate-fwd 0.8s ease-in-out infinite both;
-  animation: pulsate-fwd 0.8s ease-in-out infinite both; }
+    -webkit-animation: pulsate-fwd 0.8s ease-in-out 6 both;
+    animation: pulsate-fwd 0.8s ease-in-out 6 both;
+}
+
+i.pulsate-fwd {
+    animation-name: none;
+    -webkit-animation-name: none;
+}
 
 @-webkit-keyframes pulsate-fwd {
   0% {
@@ -1055,7 +1215,89 @@ a.action-button-2 {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+
+/**
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ---------------------------------------- */
+.shake-horizontal {
+    -webkit-animation: shake-horizontal 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s 1 both;
+    animation: shake-horizontal 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s 1 both;
+}
+
+i.shake-horizontal {
+    animation-name: none;
+    -webkit-animation-name: none;
+}
+
+@-webkit-keyframes shake-horizontal {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes shake-horizontal {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
+
+/*question-answer END */
 /*JavaScript */
+.bolded {
+    font-weight: bold;
+}
+
+.show-element {
+    display: block;
+}
+
 .hide-element {
   display: none; }
 
@@ -1086,30 +1328,37 @@ a.action-button-2 {
     color: #c64f15;
     opacity: 0.8; }
   #sliderTrigger li.active {
-    transform: scale(1.5); }
+      transform: scale(1.3);
+  }
 
-a.control_prev, a.control_next {
+.control_prev, .control_next {
+    display: block;
   position: absolute;
   bottom: 40%;
   z-index: 3;
-  display: block;
-  padding: 0.7% 1%;
-  background: #fff;
-  color: #1f3045;
-  font-size: 15px;
+    font-size: 35px;
+    color: #fff;
   text-decoration: none;
   opacity: 0.7;
-  border-radius: 50%;
   transition: all 0.2s ease; }
-a.control_prev:hover, a.control_next:hover {
-  color: #c64f15;
-  opacity: 1;
-  transform: scale(1.1); }
-a.control_prev {
-  margin-left: 10px; }
-a.control_next {
-  right: 0;
-  margin-right: 10px; }
+
+.control_prev:hover, .control_next:hover {
+    color: #c64f15;
+    opacity: 0.9;
+    cursor: pointer;
+    transform: scale(1.1);
+    animation-name: pulsate-fwd;
+    -webkit-animation-name: pulsate-fwd;
+}
+
+.control_prev.control_prev, .control_next.control_prev {
+    margin-left: 10px;
+}
+
+.control_prev.control_next, .control_next.control_next {
+    right: 0;
+    margin-right: 10px;
+}
 
 .first-image {
   position: relative;

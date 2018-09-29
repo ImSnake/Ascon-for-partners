@@ -108,44 +108,70 @@
             <div class="registration-poster">
                 <div class="poster-txt">
                     <h3>Регистрация нового партнера</h3>
-                    <p>Пожалуйста, заполните форму регистрации нового партнера АСКОН для страта процесса по получению статуса "Зарегистрированный&nbsp;партнер"</p> <p>Ответ по заявке будет предоставлен в течение 3 рабочих дней с момента отправки формы</p>
+                    <p>Пожалуйста, заполните форму регистрации нового партнера АСКОН для страта процесса по получению
+                        статуса "Зарегистрированный&nbsp;партнер"</p>
+                    <p>Ответ по заявке будет предоставлен в течение трех рабочих дней с момента отправки формы</p>
                 </div>
             </div>
-            <h4>Заявка на авторизацию в партнерской программе АСКОН</h4>
+
+            <!-- <h4>Заявка на авторизацию в партнерской программе АСКОН</h4> -->
             <form action="#" method="post" class="registration-form">
 
-                <div id="first-step"><h3>1. Информация о компании <i class="fas fa-pencil-alt"></i></h3></div>
+                <div id="first-step"><h3><i class="fas fa-pencil-alt shake-horizontal"></i>1. Информация о компании</h3>
+                </div>
 
                 <div id="company-data" class="block">
-                     <label for='company-name'><span>Юридическое&nbsp;лицо<span class="required">*</span></span><input id='company-name' type="text" class="input-field" value=""></label>
+                    <label for='company-name'><span>Юридическое&nbsp;лицо<span class="required">*</span></span><input
+                            class="input-field" id='company-name' type="text" value=""></label>
                     <label for='company-id'><span>ИНН<span class="required">* </span></span><input id='company-id' type="text" class="input-field" value=""></label>
                     <label for='company-country'><span>Страна<span class="required">* </span></span><input id='company-country' type="text" class="input-field" value=""></label>
                     <label for='company-city'><span>Город<span class="required">* </span></span><input id='company-city' type="text" class="input-field" value=""></label>
                     <label for='company-web'><span>Вебсайт<span class="required">* </span></span><input id='company-web' type="text" class="input-field" value=""></label>
-                    <label for='company-extra'><span>Примечание</span><textarea id="company-extra" class="textarea-field"></textarea></label>
-                    <a href="#" id="continue-1">Продолжить</a>
+
+                    <div class="btn-position first">
+                        <button id="continue-1" type="button">Продолжить</button>
+                    </div>
                 </div>
 
-                <div id="second-step" class="hide-element"><h3>2. Контактное лицо <i class="fas fa-pencil-alt"></i></h3></div>
+                <div id="second-step"><h3><i class="fas fa-question"></i>2. Контактное лицо</h3></div>
 
                 <div id='personal-data' class="block hide-element">
-                    <label for='data-occupation'><span>Должность<span class="required">*</span></span><input id='data-occupation' type="text" class="input-field" value="" required></label>
-                    <label for='data-name'><span>Имя, Отчество<span class="required">*</span></span><input id='data-name' type="text" class="input-field" value="" required></label>
-                    <label for='data-surname'><span>Фамилия<span class="required">*</span></span><input id='data-surname' type="text" class="input-field" value="" required></label>
-                    <label for='data-email'><span>Email<span class="required">*</span></span><input id='data-email' type="email" class="input-field" value="" required></label>
-                    <label for='data-phone'><span>Телефон<span class="required">*</span></span><input id='data-phone' type="tel" class="input-field"  placeholder="8-900-000-0000" required></label>
-                    <a href="#" id="continue-2">Продолжить</a>
+                    <label for='data-occupation'><span>Должность<span class="required">*</span></span><input
+                            class="input-field" id='data-occupation' type="text" value=""></label>
+                    <label for='data-name'><span>Имя, Отчество<span class="required">*</span></span><input
+                            class="input-field" id='data-name' type="text" value=""></label>
+                    <label for='data-surname'><span>Фамилия<span class="required">*</span></span><input
+                            class="input-field" id='data-surname' type="text" value=""></label>
+                    <label for='data-email'><span>Email<span class="required">*</span></span><input class="input-field"
+                                                                                                    id='data-email'
+                                                                                                    type="email"
+                                                                                                    value=""></label>
+                    <label for='data-phone'><span>Телефон<span class="required">*</span></span><input
+                            class="input-field" id='data-phone' placeholder="8-900-000-0000" type="tel"></label>
+
+                    <div class="btn-position">
+                        <button id="step-back-1" type="button">Вернуться</button>
+                        <button id="continue-2" type="button">Продолжить</button>
+                    </div>
                 </div>
 
-                <div id='send-form' class="block hide-element">
+                <div id="last-step"><h3><i class="far fa-envelope"></i>3. Отправить заявку</h3></div>
 
+                <div id='send-form' class="block hide-element">
+                    <label for='extra'><span>Примечание</span><textarea class="textarea-field"
+                                                                        id="extra"></textarea></label>
+                    <img alt="capcha" src="captcha-760x380.png"><br>
                     <label for="agree"><input type="checkbox" id="agree">Подтверждаю достоверность и корректность информации</label>
-                    <img src="captcha-760x380.png" alt="capcha"><br>
-                    <a href="#" id="finish">Отправить</a>
+
+                    <div class="btn-position">
+                        <button id="step-back-2" type="button">Вернуться</button>
+                        <button id="finish" type="submit">Отправить</button>
+                    </div>
                 </div>
 
             </form>
 
+            <div class="send-success hide-element"><h3><i class="far fa-thumbs-up"></i>Заявка отправлена!</h3></div>
 
 
         </div>

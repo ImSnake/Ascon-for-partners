@@ -26,25 +26,25 @@
     color: #c64f15
     opacity: 0.8
   li.active
-    transform: scale(1.5)
-a
-  &.control_prev, &.control_next
-    position: absolute
-    bottom: 40%
-    z-index: 3
-    display: block
-    padding: 0.7% 1%
-    background: #fff
-    color: #1f3045
-    font-size: 15px
-    text-decoration: none
-    opacity: 0.7
-    border-radius: 50%
-    transition: all 0.2s ease
-  &.control_prev:hover, &.control_next:hover
+    transform: scale(1.3)
+
+.control_prev, .control_next
+  display: block
+  position: absolute
+  bottom: 40%
+  z-index: 3
+  font-size: 35px
+  color: #fff
+  text-decoration: none
+  opacity: 0.7
+  transition: all 0.2s ease
+  &:hover
     color: #c64f15
-    opacity: 1
+    opacity: 0.9
+    cursor: pointer
     transform: scale(1.1)
+    animation-name: pulsate-fwd
+    -webkit-animation-name: pulsate-fwd
   &.control_prev
     margin-left: 10px
   &.control_next

@@ -12,22 +12,13 @@ const controlMethods = {
             }
             $(clicked).addClass('active-link');
     },
-
-    formCheck(step){
-        $(step).removeClass('fas fa-pencil-alt').addClass('fas fa-check').css('color', '#6db61e');
-
-
-
-
-    },
-
 };
 
 
 (function ($) {
     $(document).ready(
         function () {
-//Управление header partners-nav
+//common_Управление header partners-nav
             $('#sub-menu').click(function () {
                 $('#partners-nav').fadeIn(500).css('display', 'flex').toggleClass('hide-element');
             });
@@ -37,7 +28,7 @@ const controlMethods = {
                     $(this).addClass('hide-element');})
             });
 
-//Управление question-block div
+//common_Управление question-block div
             $('#question-icon, #question-nav').click(function () {
                 $('.question-block').fadeIn(700).removeClass('hide-element');
             });
@@ -48,7 +39,7 @@ const controlMethods = {
                 })
             });
 
-//Управление login-block div
+//common_Управление login-block div
             $('#login-icon').click(function () {
                 $('.login-block').fadeIn(700).removeClass('hide-element')
             },);
@@ -65,12 +56,12 @@ const controlMethods = {
                 $('.restore-password').removeClass('hide-element');
             });
 
-//Переключение sub-menu contacts-distributors.html, terms-and-conditions.html
+//single_Переключение sub-menu contacts-distributors.html
             $('#switch-nav li').click(function () {
                 controlMethods.switchBtwSubNavContent($(this), $('#switch-nav li'), $('div .sub-nav'));
             });
 
-//Переключение sub-menu-content terms-and-conditions.html
+//single_Переключение sub-menu-content terms-and-conditions.html
             $('#compass-link li').click(function () {
                 controlMethods.switchBtwSubNavContent($(this), $('#compass-link li'), $('#compass-link section'));
             });
@@ -79,33 +70,50 @@ const controlMethods = {
                 controlMethods.switchBtwSubNavContent($(this), $('#pilot-link li'), $('#pilot-link section'));
             });
 
-//Переключение sub-menu-content new-partner-registration.html
+//single_Переключение sub-menu-content terms-and-conditions.html
+            $('.compass-variants .options-square').click(function () {
+                $('.compass-variants .options-square div').slideToggle('hide-element');
+                $('.details').toggle('display');
+            });
+
+//=============================================================================
+//single_Переключение sub-menu-content new-partner-registration.html
+            //вперед 1 шаг
             $('#continue-1').click(function () {
-                $('#first-step i').removeClass('fas fa-pencil-alt').addClass('fas fa-check').css('color', '#6db61e');
-                $('#company-data').addClass('hide-element');
-                $('#personal-data, #second-step').removeClass('hide-element');
+                $('#first-step i').removeClass('shake-horizontal').removeClass('fa-pencil-alt').addClass('fa-check');
+                $('#second-step i').removeClass('fa-question').addClass('fa-pencil-alt').addClass('shake-horizontal');
+                $('#company-data, #personal-data').toggleClass('hide-element');
             });
 
+            //назад 1 шаг
+            $('#step-back-1').click(function () {
+                $('#first-step i').addClass('shake-horizontal').addClass('fa-pencil-alt').removeClass('fa-check');
+                $('#second-step i').addClass('fa-question').removeClass('fa-pencil-alt').removeClass('shake-horizontal');
+                $('#company-data, #personal-data').toggleClass('hide-element');
+            });
+
+            //вперед 1 шаг
             $('#continue-2').click(function () {
-                $('#second-step i').removeClass('fas fa-pencil-alt').addClass('fas fa-check').css('color', '#6db61e');
-                $('#personal-data').addClass('hide-element');
-                $('#send-form').removeClass('hide-element');
+                $('#second-step i').removeClass('fas fa-pencil-alt shake-horizontal').addClass('fas fa-check');
+                $('#last-step i').addClass('pulsate-fwd').css({'color': '#c64f15', 'animation-name': 'pulsate-fwd'});
+                $('#personal-data, #send-form').toggleClass('hide-element');
             });
 
-
-//Переключение sub-menu-content terms-and-conditions.html
-            $('.details').click(function () {
-                $('.compass-variants .options-square div').slideDown(700).removeClass('hide-element');
-                $('.details').css('display', 'none');
+            //назад 2 шаг
+            $('#step-back-2').click(function () {
+                $('#second-step i').addClass('shake-horizontal').addClass('fa-pencil-alt').removeClass('fa-check');
+                $('#last-step i').removeClass('pulsate-fwd').css({'color': 'inherit', 'animation-name': 'none'});
+                $('#personal-data, #send-form').toggleClass('hide-element');
             });
 
-            $('.no-details').click(function () {
-                $('.compass-variants .options-square div').slideUp(700, function () {
-                    $(this).css('display', 'none');
-                    $('.details').fadeIn(300).css('display', 'block');
-                });
+//single_сворачивает-разворачивает ответы question-answer
+            $('.answers h2').click(function () {
+                $(this).toggleClass('bolded');
+                $(this).children().toggleClass('hide-element');
+                $(this).next('span').toggleClass('hide-element');
+            })
 
-            });
+
 
         });
 })(jQuery);
@@ -116,18 +124,10 @@ window.onload = function() {
 
 };
 
-            $('#compass-link li').click(function () {
-                $('#compass-link li').removeClass('active-link');
-                $('#compass-link div').addClass('hide-element');
-                let adr = [$('#compass-link div')];
-                for (let i = 0, val=''; i < adr[0].length; i++) {
-                    val= $(adr[0][i]).attr('alt');
-                    if ($(this).attr('alt') === val){
-                    $(adr[0][i]).removeClass('hide-element');
-                    }
-                }
-                $(this).addClass('active-link');
+            $('#continue-1').click(function () {
+                $('#first-step i').removeClass('shake-horizontal').removeClass('fas fa-pencil-alt').addClass('fas fa-check').css('color', '#6db61e');
+                $('#company-data').addClass('hide-element');
+                //$('#personal-data').removeClass('hide-element');
             });
-
 
 */
