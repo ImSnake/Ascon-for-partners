@@ -56,7 +56,7 @@ const controlMethods = {
                 $('.restore-password').removeClass('hide-element');
             });
 
-//single_Переключение sub-menu contacts-distributors.html
+//single_Переключение sub-menu & contacts-distributors
             $('#switch-nav li').click(function () {
                 controlMethods.switchBtwSubNavContent($(this), $('#switch-nav li'), $('div .sub-nav'));
             });
@@ -72,8 +72,8 @@ const controlMethods = {
 
 //single_Переключение sub-menu-content terms-and-conditions.html
             $('.compass-variants .options-square').click(function () {
-                $('.compass-variants .options-square div').slideToggle('hide-element');
-                $('.details').toggle('display');
+                $(this).children('div').slideToggle('hide-element');
+                $(this).children('.details').toggle('display');
             });
 
 //=============================================================================
