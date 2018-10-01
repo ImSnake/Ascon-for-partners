@@ -5,8 +5,8 @@ const controlMethods = {
             $(content).addClass('hide-element');
             let adr = [$(content)];
             for (let i = 0, val=''; i < adr[0].length; i++) {
-                val= $(adr[0][i]).attr('alt');
-                if ($(clicked).attr('alt') === val){
+                val = $(adr[0][i]).attr('data-alt');
+                if ($(clicked).attr('data-alt') === val) {
                     $(adr[0][i]).removeClass('hide-element');
                 }
             }
@@ -56,7 +56,7 @@ const controlMethods = {
                 $('.restore-password').removeClass('hide-element');
             });
 
-//single_Переключение sub-menu & contacts-distributors
+//single_Переключение sub-menu & contacts-distributors & question-answer
             $('#switch-nav li').click(function () {
                 controlMethods.switchBtwSubNavContent($(this), $('#switch-nav li'), $('div .sub-nav'));
             });
@@ -70,7 +70,7 @@ const controlMethods = {
                 controlMethods.switchBtwSubNavContent($(this), $('#pilot-link li'), $('#pilot-link section'));
             });
 
-//single_Переключение sub-menu-content terms-and-conditions.html
+//single_Развертывание контента внутри блока terms-and-conditions.html
             $('.compass-variants .options-square').click(function () {
                 $(this).children('div').slideToggle('hide-element');
                 $(this).children('.details').toggle('display');
@@ -111,7 +111,8 @@ const controlMethods = {
                 $(this).toggleClass('bolded');
                 $(this).children().toggleClass('hide-element');
                 $(this).next('span').toggleClass('hide-element');
-            })
+            });
+
 
 
 

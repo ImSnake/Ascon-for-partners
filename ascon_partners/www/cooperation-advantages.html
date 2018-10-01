@@ -19,17 +19,28 @@
                 <div id='close-btn-2' class="close-btn"><i class="fas fa-times"></i></div>
                 <div class="form-style-2-heading"><p>Пожалуйста, задайте ваш вопрос</p></div>
                 <form action="#" method="post">
-                    <label for="question-name"><span>Имя <span class="required">*</span></span><input id='question-name' type="text" class="input-field" value="" required></label>
-                    <label for="question-email"><span>Email <span class="required">*</span></span><input id='question-email' type="email" class="input-field" value="" required></label>
-                    <label for="question-phone"><span>Телефон <span class="required">*</span></span><input id='question-phone' class="input-field" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="8-900-000-0000" required></label>
-                    <label for="question-options"><span>Тема </span><select id="question-options" name="question-options" class="select-field">
+                    <label for="question-name"><span>Имя <span class="required">*</span></span><input
+                            class="input-field"
+                            id='question-name'
+                            required
+                            type="text" value=""></label>
+                    <label for="question-email"><span>Email <span class="required">*</span></span><input
+                            class="input-field" id='question-email' required type="email" value=""></label>
+                    <label for="question-phone"><span>Телефон <span class="required">*</span></span><input
+                            class="input-field" id='question-phone' pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="8-900-000-0000" required type="tel"></label>
+                    <label for="question-options"><span>Тема </span><select class="select-field"
+                                                                            id="question-options"
+                                                                            name="question-options">
                         <option value="General Question">General</option>
                         <option value="Advertise">Products</option>
                         <option value="Partnership">Partnership</option>
                         <option value="Other">Other</option>
                     </select></label>
-                    <label for="question-message"><span>Сообщение <span class="required">*</span></span><textarea id="question-message" class="textarea-field" required></textarea></label>
-                    <label for="question-submit"><span>&nbsp;</span><input id='question-submit' type="submit" value="Отправить"></label>
+                    <label for="question-message"><span>Сообщение <span class="required">*</span></span><textarea
+                            class="textarea-field" id="question-message" required></textarea></label>
+                    <label for="question-submit"><span>&nbsp;</span><input id='question-submit' type="submit"
+                                                                           value="Отправить"></label>
                 </form>
             </div>
         </div>
@@ -41,9 +52,12 @@
                 <div id='close-btn-1' class="close-btn"><i class="fas fa-times "></i></div>
                 <div class="login-style-1-heading"><p>Войти в личный кабинет партнера</p></div>
                 <form action="#" method="post">
-                    <label for="login-email"><span>Email\login<span class="required">*</span></span><input id='login-email' type="email" class="input-field" value="" required></label>
-                    <label for="login-password"><span>Password<span class="required">*</span></span><input id='login-password' type="password" class="input-field" value="" required></label>
-                    <label for="login-send"><span>&nbsp;</span><input id='login-send' type="submit" value="Войти"></label>
+                    <label for="login-email"><span>Email\login<span class="required">*</span></span><input
+                            class="input-field" id='login-email' required type="email" value=""></label>
+                    <label for="login-password"><span>Password<span class="required">*</span></span><input
+                            class="input-field" id='login-password' required type="password" value=""></label>
+                    <label for="login-send"><span>&nbsp;</span><input id='login-send' type="submit"
+                                                                      value="Войти"></label>
                 </form>
                 <div class="login-style-1-ending">
                     <a href="#" id="restore-password">Восстановить пароль</a><br>
@@ -55,8 +69,10 @@
                 <div class="login-style-1-heading"><p>Восстановление пароля</p>
                     <span>На указанный при регистрации email будет отправлено письмо с паролем</span></div>
                 <form action="#" method="post">
-                    <label for="restore-password-email"><span>Email<span class="required">*</span></span><input id='restore-password-email' type="email" class="input-field" value="" required></label>
-                    <label for="restore-password-send"><span> </span><input id='restore-password-send' type="submit" value="Получить пароль"></label>
+                    <label for="restore-password-email"><span>Email<span class="required">*</span></span><input
+                            class="input-field" id='restore-password-email' required type="email" value=""></label>
+                    <label for="restore-password-send"><span> </span><input id='restore-password-send' type="submit"
+                                                                            value="Получить пароль"></label>
                 </form>
             </div>
         </div>
@@ -104,7 +120,164 @@
 
         </div>
 
-        <section class="content-box"><h2 style="margin-top:20px; color: #c94f00; font-size: 16px; font-weight: 800; text-align: center">ПРЕИМУЩЕСТВА ДЛЯ ПАРТНЕРОВ</h2></section>
+        <div class="content-box cooperation-advantages">
+
+            <div class="cooperation-advantages-poster">
+                <div class="poster-txt">
+                    <h3>Преимущества сотрудничества с АСКОН</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aut cumque distinctio
+                        dolorum</p>
+                </div>
+                <nav class="contacts-nav">
+                    <ul id="switch-nav">
+                        <li class="active-link" data-alt="company">Партнерам</li>
+                        <li data-alt="status">Возможности статусов</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="sub-nav" data-alt="company">
+                <div class="background-option advantages">
+                    <div class="options-block">
+                        <div class="options-square">
+                            <div><i class="fas fa-rocket"></i>
+                                <h3>легкий<br>старт</h3></div>
+                            <p>Отсутствие взносов и трбований по&nbsp;приобретению ПО</p>
+                            <p>Без обязательств по&nbsp;объемам&nbsp;продаж</p>
+                            <p>Обучение и сертификация</p>
+                            <p>Материалы в поддержку продаж</p>
+                            <p>Оперативное решение вопросов<br>
+                        </div>
+
+                        <div class="options-square">
+                            <div><i class="far fa-handshake"></i>
+                                <h3>успешный<br>бизнес</h3></div>
+                            <p>Надежные и широко известные продукты</p>
+                            <p>Высокая маржинальность</p>
+                            <p>Единая ценовая политика и&nbsp;контроль</p>
+                            <p>Механизм регистрации сделок</p>
+                            <p>Дополнительный бизнес по&nbsp;продаже&nbsp;услуг</p>
+                            <p>Пре-сейл поддержка</p>
+                        </div>
+
+                        <div class="options-square">
+                            <div><i class="fas fa-bullhorn"></i>
+                                <h3>доступный<br>маркетинг</h3></div>
+                            <p>База знаний о продуктах</p>
+                            <p>Печатная продукция и&nbsp;электронные&nbsp;материалы</p>
+                            <p>Совместное продвижение</p>
+                            <p>Компенсация маркетинговых затрат</p>
+                            <p>Участие в мероприятиях вендора</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Почему АСКОН?</h3>
+                <div class="about-company">
+                    <p>АСКОН — крупнейший российский разработчик инженерного программного обеспечения.</p>
+                    <p>Компания работает на ИТ-рынке c 1989 года и неизменно входит в тройку лидеров среди поставщиков
+                        инженерного ПО в России и в сотню крупнейших ИТ-компаний страны.</p>
+                    <p>Решения АСКОН – надежные, широко известные и эффективные инструменты для автоматизации
+                        инженерной подготовки производства и проектирования.</p>
+                    <p>Заказчики АСКОН - более 10 000 предприятий в России и за рубежом. Более 1600 вузов РФ и стран
+                        СНГ используют программные решения АСКОН в своём учебном процессе.</p>
+
+                    <div class="background-option">
+                        <div class="options-block">
+                            <div class="options-square">
+                                <img alt="about company" src="images/icons/about-company1.png">
+                                <h3>29</h3>
+                                <p>лет мы создаем САПР</p>
+                            </div>
+
+                            <div class="options-square">
+                                <img alt="about company" src="images/icons/about-company2.png">
+                                <h3>650</h3>
+                                <p>сотрудников в нашей команде</p>
+                            </div>
+
+                            <div class="options-square">
+                                <img alt="about company" src="images/icons/about-company3.png">
+                                <h3>250</h3>
+                                <p>из них занимаются исследованиями и разработкой</p>
+                            </div>
+
+                            <div class="options-square">
+                                <img alt="about company" src="images/icons/about-company4.png">
+                                <h3>33</h3>
+                                <p>офиса в России, Беларуси и Казахстане</p>
+                            </div>
+
+                            <div class="options-square">
+                                <img alt="about company" src="images/icons/about-company5.png">
+                                <h3>>50</h3>
+                                <p>компаний-партнеров в России и за рубежом</p>
+                            </div>
+
+                            <div class="options-square">
+                                <img alt="about company" src="images/icons/about-company6.png">
+                                <h4>>10000</h4>
+                                <p>заказчиков — предприятий и проектных организаций</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-nav hide-element" data-alt="status">
+                <div class="partner-advantages">
+                    <div class="options-block">
+                        <div class="options-square active-link">
+                            <div><img alt="pilotICE-logo" src="images/compas-logo.png">
+                                <h3>партнер компас</h3></div>
+                        </div>
+                        <div class="options-square">
+                            <div><img alt="pilotICE-logo" src="images/pilotICE-logo.png">
+                                <h3>партнер пилот</h3></div>
+                        </div>
+                    </div>
+
+                    <div class="table-option compas-partner">
+                        <div class="div-table compass">
+                            <div class='main-column head'></div>
+                            <div class="simple-column head">ПАРТНЕР</div>
+                            <div class="simple-column head">ПАРТНЕР-ЭКСПЕРТ</div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Продажа разрешенного ассортимента ПО КОМПАС по прейскуранту</div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Информационная поддержка</div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Участие в маркетинговых мероприятиях АСКОН</div>
+                            <div class="simple-column"></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Партнерский комплект</div>
+                            <div class="simple-column"></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Размещение информации о партнере на сайте АСКОН и в печатных
+                                материалах
+                            </div>
+                            <div class="simple-column"></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="div-table compass">
+                            <div class='main-column'>Бесплатное участие в партнерской конференции АСКОН</div>
+                            <div class="simple-column"></div>
+                            <div class="simple-column"><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div id="question-icon" class="question-icon">
             <a class="flip-vertical-right" href="#"><span>Задать вопрос</span></a>
@@ -130,7 +303,8 @@
                         <ul>
                             <li><a href="http://kompas.ru/kompas-3d/about/" target="_blank">КОМПАС-3D</a></li>
                             <li><a href="http://kompas.ru/kompas-grafik/about/" target="_blank">КОМПАС-График</a></li>
-                            <li><a href="http://kompas.ru/kompas-stroitel/about/" target="_blank">КОМПАС-Строитель</a></li>
+                            <li><a href="http://kompas.ru/kompas-stroitel/about/" target="_blank">КОМПАС-Строитель</a>
+                            </li>
                             <li><a href="http://pilotems.com/" target="_blank">Pilot-ICE</a></li>
                         </ul>
                     </div>
@@ -138,9 +312,14 @@
                         <h3>/ Другие сайты Аскон</h3>
                         <ul>
                             <li><a href="http://ascon.ru" target="_blank">Основной сайт АСКОН</a></li>
-                            <li><a href="http://certification.ascon.ru/about_certification/" target="_blank">Единая система сертификации АСКОН</a></li>
-                            <li><a href="http://support.ascon.ru/conditions/" target="_blank">Служба поддержки пользователей</a></li>
-                            <li><a href="http://edu.ascon.ru/main/news/" target="_blank">Образовательная программа АСКОН</a></li>
+                            <li><a href="http://certification.ascon.ru/about_certification/" target="_blank">Единая
+                                система
+                                сертификации АСКОН</a></li>
+                            <li><a href="http://support.ascon.ru/conditions/" target="_blank">Служба поддержки
+                                пользователей</a></li>
+                            <li><a href="http://edu.ascon.ru/main/news/" target="_blank">Образовательная программа
+                                АСКОН</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
